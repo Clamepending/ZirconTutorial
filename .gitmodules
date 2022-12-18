@@ -4,3 +4,9 @@
 [submodule "themes/doks-child-theme"]
 	path = themes/doks-child-theme
 	url = https://github.com/h-enk/doks-child-theme.git
+[submodule "hugo-PaperMod"]
+	path = hugo-PaperMod
+	url = https://github.com/adityatelange/hugo-PaperMod.git
+[submodule "themes/hugo-PaperMod"]
+	path = themes/hugo-PaperMod
+	url = https://github.com/adityatelange/hugo-PaperMod.git
