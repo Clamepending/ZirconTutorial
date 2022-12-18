@@ -1,4 +1,4 @@
-baseURL = "https://examplesite.com/"
+baseURL = "https://zircontutorial.netlify.app"
 title = "ExampleSite"
 paginate = 5
 theme = "hugo-PaperMod"
