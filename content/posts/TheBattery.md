@@ -1,7 +1,7 @@
 ---
 title: "The Battery"
 date: 2020-09-15T11:30:03+00:00
-weight: 1
+weight: 2
 # aliases: ["/first"]
 tags: ["first"]
 author: "Me"
@@ -40,7 +40,7 @@ cover:
 
 ![Parts List](/img/PartsList.jpg)
 
-# Materials used:
+## Materials used
 
 1. MAIN PCB X1
 2. FEMALE HEADER PINS X2   
@@ -60,7 +60,7 @@ cover:
 16. M3 NUTS X12
 17. M3 STANDOFFS X12
 
-# Tools needed:
+## Tools needed
 
 1. SOLDERING IRON
 2. SOLDER

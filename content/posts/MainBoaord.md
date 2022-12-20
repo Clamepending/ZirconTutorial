@@ -1,7 +1,7 @@
 ---
-title: "The Teensy"
+title: "Main Board"
 date: 2020-09-15T11:30:03+00:00
-weight: 3
+weight: 4
 # aliases: ["/first"]
 tags: ["first"]
 author: "Me"
@@ -38,20 +38,25 @@ cover:
 
 
 
-![Finished Teensy](/img/steps/teensycroped.jpg)
+![Finished Teensy](/img/steps/MainBoardComplete.jpg)
 
 ## Materials used
 
-1. Teensy LC x1
-2. Male header pins x2
+1. Male T connector x1
+2. Zircon PCB x1
+3. Female header pins x2
+4. Switch x1
+5. 4 pin JST port (inside the compass bag) x1
+6. Ball sensors x8
 
 ## Tools needed
 
 1. Solder
 2. Soldering iron
+3. Wire cutters
 
 
-![Teensy Materials](/img/teensyMaterials.jpg)
+![Teensy Materials](/img/MainBoardParts.jpg)
 
 
 # Header Pins
