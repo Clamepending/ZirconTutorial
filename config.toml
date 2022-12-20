@@ -1,5 +1,5 @@
 baseURL = "https://zircontutorial.netlify.app"
-title = "ExampleSite"
+title = "Zircon Tutorial"
 paginate = 5
 theme = "hugo-PaperMod"
 enableRobotsTXT = true
@@ -15,7 +15,7 @@ minifyOutput = true
 
 [params]
 env = "production"
-title = "ExampleSite"
+title = "Zircon Tutorial"
 description = "ExampleSite description"
 keywords = [ "Blog", "Portfolio", "PaperMod" ]
 author = "Me"
@@ -53,7 +53,7 @@ tocopen = false
 
   [params.profileMode]
   enabled = false
-  title = "ExampleSite"
+  title = "Zircon Tutorial"
   subtitle = "This is subtitle"
   imageUrl = "<img location>"
   imageWidth = 120
@@ -69,20 +69,16 @@ tocopen = false
     url = "tags"
 
   [params.homeInfoParams]
-  Title = "Hi there 👋"
-  Content = "Welcome to my blog"
+  Title = "Welcome to Zircon"
+  Content = "To get started, click on Parts List"
 
   [[params.socialIcons]]
   name = "twitter"
-  url = "https://twitter.com/"
+  url = "https://twitter.com/Robomov_USA"
 
   [[params.socialIcons]]
-  name = "stackoverflow"
-  url = "https://stackoverflow.com"
-
-  [[params.socialIcons]]
-  name = "github"
-  url = "https://github.com/"
+  name = "instagram"
+  url = "https://www.instagram.com/robomovusa/"
 
 [params.analytics.google]
 SiteVerificationTag = "XYZabc"
@@ -125,9 +121,9 @@ url = "/tags/"
 weight = 20
 
 [[menu.main]]
-identifier = "example"
-name = "example.org"
-url = "https://zircontutorial.netlify.app"
+identifier = "Robomov.net"
+name = "Robomov.net"
+url = "https://robomov.net"
 weight = 30
 
 [markup.highlight]
