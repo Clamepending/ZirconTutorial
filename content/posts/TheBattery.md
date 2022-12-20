@@ -1,5 +1,5 @@
 ---
-title: "Parts List"
+title: "The Battery"
 date: 2020-09-15T11:30:03+00:00
 weight: 1
 # aliases: ["/first"]
@@ -38,9 +38,9 @@ cover:
 
 
 
-![Parts List](/static/img/PartsList.jpg)
+![Parts List](/img/PartsList.jpg)
 
-# PARTS
+# Materials used:
 
 1. MAIN PCB X1
 2. FEMALE HEADER PINS X2   
@@ -60,7 +60,7 @@ cover:
 16. M3 NUTS X12
 17. M3 STANDOFFS X12
 
-# TOOLS
+# Tools needed:
 
 1. SOLDERING IRON
 2. SOLDER
@@ -68,3 +68,24 @@ cover:
 4. PLIERS
 5. WIRE CUTTERS
 6. VOLTMETER
+
+
+
+# Soldering
+
+If you do not know how to solder, it is recommended you practice first with something like https://www.sparkfun.com/products/14635 or a spare board before this.
+
+Soldering is used to make an electrical connection between two parts. It involves melting the solder with the soldering iron (at 250° - 350°C) and touching the molten solder onto where the connection is needed. There are many excellent soldering tutorials on youtube like the one below.
+
+Hint: To keep the female t connector from deforming, it is a good idea to plug the male one in to keep the shape while soldering.
+
+{{< youtube id="VxMV6wGS3NY" >}}
+
+
+Solder the black wire to the horizontal pin and red wire to the vertica pin of the T connector.
+
+![Battery Connector](/img/steps/BatteryTConnectorBack.jpg)
+
+The result should look like this:
+
+![Parts List](/img/steps/TheBattery.jpg)
