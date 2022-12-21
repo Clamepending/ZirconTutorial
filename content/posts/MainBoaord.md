@@ -56,56 +56,60 @@ cover:
 3. Wire cutters
 
 
-![Teensy Materials](/img/MainBoardParts.jpg)
+![Mainboard Materials](/img/MainBoardParts.jpg)
 
 
-# Header Pins
+## T connector
 
-It is important to solder the header pins straight, and not have them slanted
+If you inserted the Male T connector into the female T connector when soldering the battery case, take the Male T connector out to use it in this step.
 
-To break header pins into the right length, use your fingernails or a wire cutter on the indent between the pins where you want to make a cut.
+Insert the male T connector into the T shaped hole in the Zircon PCB.
 
-With fingernail: Apply pressure as close you can to the fingernail to bend the header pin to minimise the chance of the header pin breaking at some other point.
+Solder it in place. This will take more solder than usual because the pads are big.
 
-With wire cutter: align the mouth of the wire cutter with the indent where you want to cut the header pin and squeeze.
-
-{{< youtube id="y7TUmR5pU8Q" >}}
+![Mainboard Materials](/img/Tconnectorplacement.PNG)
 
 
-### Please cut the following length header pins:
 
-1. 14 pin long header pin x2
-2. 3 pin long header pin x1
-3. 1 pin long header pin x1
+## Switch
 
-![Header pins](/img/teensyHeaders.PNG)
+Put the switch in the 3 holes. The direction does not matter. Solder all three holes and cut the excess length of pin with a wire cutter
 
-Take a 14 pin header pin and put it in one side of the teensy, making sure all 14 pins go into a hole
+![switch placement](/img/steps/switchplacement.jpg)
 
-![Parts List](/img/14pinOnSideTeensy.PNG)
+## How to cut header pins
 
-### Solder ONLY ONE pin first.
+Cutting female header pins is slightly different to cutting male ones. You will need to sacrifice 1 pin for each cut.
 
-Inspect the header pin to see if it is slanted or has a gap like the one below. To fix any issues, (like a slanted header pin in the picture), melt the soldered pin and adjust the header pin, then remove the soldering iron to let the solder harden again. Make sure not to heat up the header pin too long or else it will start to melt. It is ok to take multiple tries and let the header pin cool down between attempts.
+To cut female header pins, place a wire cutter exactly in the middle of the pin and cut. This will destroy the pin the wire cutter cut, but will result in no harm to the pins on either side.
+
+{{< youtube id="WAvgahqRGlQ" >}}
+
+## female header pins
+
+Please cut the following length female header pins:
+
+1. 24 pin long female header pin x2
+2. 3 pin long female header pin x1
+3. 1 pin long female header pin x1
 
 
-![Parts List](/img/crookedteensy.PNG)
+![female hader pin placement](/img/steps/revisedmainboardpins.png)
 
-The top side should look like this
+Place the 24 pin, 3 pin, and 1 pin long header pins in their respective holes (direction does not matter) and solder them.
 
-![Parts List](/img/soldered14pin.PNG)
+![after soldering](/img/steps/headerpinssoldered.PNG)
 
-Repeat the process on the other side with 14 more pins
+Solder the 4 pin JST port into place. The direction DOES matter so make sure it is exactly like the image.
 
-![Parts List](/img/2x14pinsolderedteensy.PNG)
+![Parts List](/img/steps/JSTDirection.PNG)
 
-Take the 3 pin header and put it into the inside 3 pins of the teensy. Solder 1 pin and make sure the header pin is straight without any gaps. Correct as needed like above, and solder the rest of the pins once done.
+Insert the Infrared (ball) sensors in the 8 slots equally spaced around the perimeter of the main board and solder them. It helps to bend the pins after inserting, then solder, then clip the extra length of the pins
 
-![3 and 1 pin](/img/steps/3pin.jpg)
+![ball sensors](/img/steps/ballsensors.jpg)
 
 
 The result should look like this:
 
 
-![Parts List](/img/steps/teensycroped.jpg)
-![Parts List](/img/steps/allsolderedteensy.jpg)
+![Parts List](/img/steps/MainBoardComplete.jpg)

@@ -38,9 +38,9 @@ cover:
 
 
 
-![Parts List](/img/PartsList.jpg)
+![Parts List](/img/labeledparts.jpg)
 
-# PARTS
+## PARTS
 
 1. MAIN PCB X1
 2. FEMALE HEADER PINS X2   
@@ -53,14 +53,14 @@ cover:
 9. MOTORS X3
 10. MOTOR MOUNT X3
 11. OMNIWHEELS X3
-12. WIRE X3
+12. WIRE X6
 13. 4 PIN SOCKET (I2C) X1
 14. LINE SENSORS X3
 15. M3 BOLTS X36
 16. M3 NUTS X12
 17. M3 STANDOFFS X12
 
-# TOOLS
+## TOOLS
 
 1. SOLDERING IRON
 2. SOLDER
