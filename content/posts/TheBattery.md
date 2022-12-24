@@ -71,7 +71,7 @@ cover:
 
 
 
-# Soldering
+## Soldering
 
 If you do not know how to solder, it is recommended you practice first with something like https://www.sparkfun.com/products/14635 or a spare board before this.
 

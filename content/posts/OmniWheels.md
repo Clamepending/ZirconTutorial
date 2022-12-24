@@ -83,7 +83,7 @@ Take 3 bolts and 3 nuts (the smaller ones called m2) and secure the two wheels t
 
 ![soldered motors](/img/steps/doublesandwitch.jpg)
 
-## secure onto chasis
+## secure wheel onto motor
 
 Slide the omniwheel onto the shaft of a motor from Part 4.
 
@@ -93,11 +93,15 @@ If you have trouble here, it is probably because you mixed up the order of the b
 
 Secure the omniwheel onto the motor by screwing an aluminum standoff onto the motor shaft.
 
+You dont have to put the motor on the mainboard yet!
+
 ![soldered motors](/img/steps/omniweelwithoutstandoff.jpg)
 
 ## Repeat!
 
 The result should look like this.
 repeat 3 times for each other motor
+
+You dont have to put the motor on the mainboard yet!
 
 ![soldered motors](/img/steps/omniwheelFinished.jpg)

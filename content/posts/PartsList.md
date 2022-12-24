@@ -40,6 +40,9 @@ cover:
 
 ![Parts List](/img/labeledparts.jpg)
 
+Make sure you have all of the parts!
+contact mineko@robomov.net if any are missing.
+
 ## PARTS
 
 1. MAIN PCB X1
