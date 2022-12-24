@@ -70,7 +70,7 @@ Inserting the teensy into the wrong slot or pins not going where they are suppos
 
 ![inserting pin](/img/steps/SecondteensyInsertedpic.jpg)
 
-## Secure line sensor
+## Battery Check
 
 Insert the AA batteries into the battery holder. Set your voltmeter to measure voltage (around 6 volts if there is a setting on your voltmeter) Make sure the black probe of the voltmeter is on the COM port of the voltmeter and the red probe is on VΩmA.
 
@@ -79,6 +79,8 @@ Place the black probe into the vertical and black part of the T connector of the
 The voltmeter should read POSITIVE 6 volts. If it reads negative, please unsolder and swap the red and black wires of the battery case. As a doublecheck, swapping the voltmeter probes should show NEGATIVE 6 volts. As an additional reference, here is a lipo battery with a T connector. The colors of the battery wires (red and black) connected to the T connector should be exactly like your battery case.
 
 ![soldered motors](/img/steps/DoublecheckBattery.jpg)
+
+## Magic smoke
 
 Now that you checked the battery is made correctly, plug it into the Zircon through the T connector. If the line sensors and teensy have not turned on (shown by an led),flip the big switch.
 
@@ -91,4 +93,6 @@ Take the compass sensor and connect it to the Zircon through its 4 pin cable. Th
 Congratulations!
 
 hardware is done… for now >:)
+
+next up: software
 
