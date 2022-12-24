@@ -3,18 +3,18 @@ title: "The Teensy"
 date: 2020-09-15T11:30:03+00:00
 weight: 3
 # aliases: ["/first"]
-tags: ["first"]
-author: "Me"
+tags: ["hardware"]
+author: "Mark Ogata"
 # author: ["Me", "You"] # multiple authors
 showToc: true
 TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "Desc Text."
+description: "Step 2"
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
-disableShare: false
+disableShare: true
 disableHLJS: false
 hideSummary: false
 searchHidden: true
@@ -67,7 +67,7 @@ With wire cutter: align the mouth of the wire cutter with the indent where you w
 {{< youtube id="y7TUmR5pU8Q" >}}
 
 
-### Please cut the following length header pins:
+## Please cut the following length header pins:
 
 1. 14 pin long header pin x2
 2. 3 pin long header pin x1
@@ -79,7 +79,7 @@ Take a 14 pin header pin and put it in one side of the teensy, making sure all 1
 
 ![Parts List](/img/14pinOnSideTeensy.PNG)
 
-### Solder ONLY ONE pin first.
+## Solder ONLY ONE pin first.
 
 Inspect the header pin to see if it is slanted or has a gap like the one below. To fix any issues, (like a slanted header pin in the picture), melt the soldered pin and adjust the header pin, then remove the soldering iron to let the solder harden again. Make sure not to heat up the header pin too long or else it will start to melt. It is ok to take multiple tries and let the header pin cool down between attempts.
 

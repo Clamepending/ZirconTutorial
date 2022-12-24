@@ -1,7 +1,7 @@
 ---
-title: "Mounting"
+title: "Line Sensors"
 date: 2020-09-15T11:30:03+00:00
-weight: 7
+weight: 8
 # aliases: ["/first"]
 tags: ["hardware"]
 author: "Mark Ogata"
@@ -11,7 +11,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "Step 7"
+description: "Step 8"
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: true
@@ -42,41 +42,35 @@ cover:
 
 ## Materials used
 
-1. Motor and omniwheel from part 5 x3
-2. M3 bolts x12
-3. M3 nuts x12
+1. M3 Metal female female standoffs x12
+2. M3 bolts x24
+3. Line sensor x3
 
 ## Tools needed
 
-1. Solder
-2. Soldering iron
-3. Phillips head screwdriver
-4. Pliers (optional)
+1. Screw driver
+
+![Motor Materials](/img/linesensorparts.jpg)
 
 
-![Motor Materials](/img/cuttingbottom.PNG)
+The line sensor board has 4 holes, of which 1 is placed closer to the edge. There should be 3 of the same shape on the Zircon board.
 
+Use 4 bolts and 4 standoffs to sandwich the line sensor. The bolts should be screwed in from the side with electrical components (side DOES matter)
 
-To mount the motors, we need as flat of a board as possible underneath where the motors will sit.
-
-Use a wire cutter to cut any pins sticking out from under the Zircon board. Be careful not to damage the silkscreen (the green or black part of the Zircon board).
-
-## Secure motors
+## Prepare line sensor
 
 We will repeat the next steps 3 times for each motor. For this step, be sure not to overtighten the bolts and dig into the PCB. Tighten them comfortably but not too much. Get 4 m3 bolts (the larger ones) and m3 nuts. Secure the motor onto the Zircon board with the 4 bolts through the holes in the black casing.
 
-![inserting pin](/img/steps/securingmotor.PNG)
+![inserting pin](/img/steps/linesensorsingle.jpg)
 
-## Solder motor wires
+## Secure line sensor
 
-Solder the motor wires into their respective pins Accidentally swapping the pins of the same motor is fine. The result would be the motor will spin in the opposite way than it is commanded (keep that in mind when programming).
+Attach the sensor to the Zircon board with 4 more bolts. The standoffs should be straight. If not, please make sure you put the line sensor in the correct orientation and facing down.
 
-Accidentally swapping pins from different motors is not fine, so if that happens please unsolder carefully and correct it.
+Repeat 2 more times.
 
-Repeat these steps for the other 2 motors.
-
-{{< youtube id="RKKadLGrtvk" >}}
+![soldered motors](/img/steps/MountedLinesensor.jpg)
 
 The result should look like this
 
-![soldered motors](/img/motorwiressoldered.PNG)
+![soldered motors](/img/steps/FinishedLineSensor.jpg)

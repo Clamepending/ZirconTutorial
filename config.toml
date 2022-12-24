@@ -108,11 +108,11 @@ SiteVerificationTag = "XYZabc"
   minMatchCharLength = 0
   keys = [ "title", "permalink", "summary", "content" ]
 
-[[menu.main]]
-identifier = "categories"
-name = "categories"
-url = "/categories/"
-weight = 10
+# [[menu.main]]
+# identifier = "categories"
+# name = "categories"
+# url = "/categories/"
+# weight = 10
 
 [[menu.main]]
 identifier = "tags"

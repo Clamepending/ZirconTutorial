@@ -3,18 +3,18 @@ title: "The Motors"
 date: 2020-09-15T11:30:03+00:00
 weight: 5
 # aliases: ["/first"]
-tags: ["first"]
-author: "Me"
+tags: ["hardware"]
+author: "Mark Ogata"
 # author: ["Me", "You"] # multiple authors
 showToc: true
 TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "Desc Text."
+description: "Step 5"
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
-disableShare: false
+disableShare: true
 disableHLJS: false
 hideSummary: false
 searchHidden: true
