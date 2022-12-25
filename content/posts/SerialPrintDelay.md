@@ -44,5 +44,29 @@ print your name to the serial port every 0.7 seconds forever (until you press Ct
 
 ## Solution
 
+{{< collapse summary="show solution" >}}
+
+```C++
+#include <Arduino.h>
+ 
+void setup() {
+    // put your setup code here, to run once:
+ 
+    Serial.begin(9600);
+ 
+}   
+ 
+void loop() {
+    // put your main code here, to run repeatedly
+ 
+    String yourName = "Mark";
+    Serial.println(yourName);
+    
+    delay(700);
+}
+```
+
+{{< /collapse >}}
+
 
 

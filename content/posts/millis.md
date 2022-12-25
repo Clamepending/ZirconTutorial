@@ -44,5 +44,56 @@ measure how long it took to compute the factors of 1294892647 (your previous pro
 
 ## Solution
 
+{{< collapse summary="show solution" >}}
 
+```C++
+#include <Arduino.h>
+
+void setup() {
+    
+    Serial.begin(9600);
+
+}   
+
+void loop() {
+    
+    //store the time at the start
+    int start = millis();
+
+    //below is the program from before:
+
+    int number = 1294892647;
+    int testFactor = 2;
+
+    Serial.println("Factors are: ");
+    while (number > 1){
+      if(number % testFactor == 0){
+        number = number/testFactor;
+        Serial.println(String(testFactor));
+        testFactor = 1;
+      }
+      testFactor = testFactor + 1;
+      
+    }
+
+
+    //Print the difference between current time and start
+    Serial.println("the factorization took: " + 
+    String(millis() - start) + 
+    " milliseconds");
+
+    delay(1000);
+}
+
+/**
+ * Factors are: 
+59
+2411
+9103
+the factorization took: 18 milliseconds
+**/
+    
+```
+
+{{< /collapse >}}
 

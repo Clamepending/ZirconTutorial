@@ -44,5 +44,31 @@ Compute (1234 * (567 % 8) * 9 - 10 + 11*12), then print out "the answer is: (you
 
 ## Solution
 
+{{< collapse summary="show solution" >}}
 
+```C++
+#include <Arduino.h>
+
+void setup() {
+
+    Serial.begin(9600);
+
+}   
+
+void loop() {
+
+    // we use a double because it can handle 
+    //very big numbers, floats, and very small numbers.
+    double answer = 1234 * (567 % 8) * 9 - 10 + 11*12; 
+    
+    //we use String() to convert answer from a double 
+    //to a float to combine it with a string to print it out
+    Serial.println("the answer is: " + String(answer));
+    
+    
+    delay(1000);
+}
+```
+
+{{< /collapse >}}
 

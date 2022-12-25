@@ -50,5 +50,50 @@ this one is hard!
 
 ## Solution
 
+{{< collapse summary="show solution" >}}
 
+```C++
+#include <Arduino.h>
+
+    void setup() {
+        // put your setup code here, to run once:
+    
+        Serial.begin(9600);
+    
+    }   
+    
+    void loop() {
+        //we define a and b to be 
+        //the last 2 numbers we have so far
+        int a = 1;
+        int b = 1;
+    
+    
+        //we can declare a variable without assigning it to 
+        //a specific value like 0. 
+        //we are essentially promissing to assign a value to 
+        //it before we use it
+        //the code would work the same if you just said 
+        //int nextNumber = 0;
+        int nextNumber; 
+    
+        //we set i < 38 because we set the first two fibinacci 
+        //numbers 1, 1 as default, so at i = 0, 
+        //we are calculating the 3rd fibinacci number
+        //so 40 - 2 = 38
+        for(int i = 0; i < 38; i++){
+            //here we compute the next number
+            //if this is the first run, it is the 
+            //first time nextNumber is assigned
+            nextNumber = a + b;
+            a = b;
+            b = nextNumber;
+        }
+        Serial.println(nextNumber);
+        
+        delay(700);
+    }
+//answer is 102334155
+
+{{< /collapse >}}
 
