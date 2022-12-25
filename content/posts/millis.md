@@ -1,7 +1,7 @@
 ---
 title: "millis()"
 date: 2020-09-15T11:30:03+00:00
-weight: 11
+weight: 17
 # aliases: ["/first"]
 tags: ["software"]
 author: "Mark Ogata"
@@ -11,7 +11,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "Step 9"
+description: "Step 16"
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: true

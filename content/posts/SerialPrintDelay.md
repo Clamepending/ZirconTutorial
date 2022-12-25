@@ -1,7 +1,7 @@
 ---
 title: "Serial, Printing, Delay"
 date: 2020-09-15T11:30:03+00:00
-weight: 11
+weight: 13
 # aliases: ["/first"]
 tags: ["software"]
 author: "Mark Ogata"

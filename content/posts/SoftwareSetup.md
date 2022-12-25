@@ -1,7 +1,7 @@
 ---
-title: "Hardware Check"
+title: "Software Setup"
 date: 2020-09-15T11:30:03+00:00
-weight: 10
+weight: 11
 # aliases: ["/first"]
 tags: ["software"]
 author: "Mark Ogata"
@@ -11,7 +11,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "Step 9"
+description: "Step 10"
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: true
@@ -43,10 +43,8 @@ cover:
 ## Materials used
 
 1. Finished Zircon x1
-USB to micro USB cable x1
-Computer x1
-
-![Motor Materials](/img/HardwareCheckParts.jpg)
+2. USB to micro USB cable x1
+3. Computer x1
 
 ## VS Code and platformio
 

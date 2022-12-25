@@ -1,7 +1,7 @@
 ---
 title: "Arrays"
 date: 2020-09-15T11:30:03+00:00
-weight: 11
+weight: 19
 # aliases: ["/first"]
 tags: ["software"]
 author: "Mark Ogata"
@@ -11,7 +11,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "Step 9"
+description: "Step 18"
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: true
