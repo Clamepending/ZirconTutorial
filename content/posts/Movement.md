@@ -1,7 +1,7 @@
 ---
 title: "Robotics"
 date: 2020-09-15T11:30:03+00:00
-weight: 20
+weight: 21
 # aliases: ["/first"]
 tags: ["robotics"]
 author: "Mark Ogata"
@@ -11,7 +11,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "Step 19"
+description: "Step 20"
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: true
@@ -36,11 +36,63 @@ cover:
 #     appendFilePath: true # to append file path to Edit link
 ---
 
-Now we can combine C++ and Zircon to make a soccer robot.
-We will use C++ to read sensor data and actuate motors. 
+We will move the motors!
 
-Each sensor (such as a button) is connected to a pin on the Teensy (the main microcontroller). There are analog and digital sensors. We will talk about digital sensors later. Analog sensors normaly have an output pin that has a varying voltge depending on the state of the sensor. For example, the output pin might be 3.3V when button is pressed, and 0V when the button is not pressed. 
-So we "read" sensors by reading the voltage of the sensor pin.
+Instead of having the microcontroller directly connected to the motors, there is a device called the motor driver that takes care of many things such as switching direction, high power switching, and noise protection.
+
+To communicate to the motor driver what we wnt it to do, we have 3 pins for each motor. 
+2 of them are direction pins, and 1 is a power pin.
+
+## direction pins
+
+The direction pins communicate the direction. if we write a logic HIGH (3.3 volts or analogWrite(255)) to one pin and write a logic LOW (0 volts or analogWrite(0)) to the other pin, the motor will spin in one direction.
+
+Swapping the HIGH and LOW pin reverses the direction. If both direction pins are HiGH, or if both are LOW, the motor driver will apply a braking force (motor will just stop).
+
+## power pin
+
+How do we control the speed of the motor?
+The power pin.
+
+The PWM duty cycle of the power pin controls the speed.
+
+What is PWM and PWM duty cycle?
+
+{{< youtube id="ISzRh5eN_Pg" >}}
+
+{{< youtube id="YmPziPfaByw" >}}
+
+{{< youtube id="4PtepH8CcEE" >}}
+
+Don't worry if you didnt understand everything. Feel free to search things on google and youtube when you dont understand.
+
+Writing a 100% duty cycle to the power pin translates to a 100% power of the motor.
+Writing a 25% duty cycle to the power pin translates to a 25% power of the motor.
+
+The commmnd to write a PWM signal to a pin is 
+```C++
+anlogWrite();
+```
+
+Writing a 0% duty cycle to pin 3 would look like:
+```C++
+analogWrite(3, 0);
+```
+
+The first argument is th epin number and the second is the duty cycle amount.
+
+Instead of 100 being 100%, 255 is the maximum because to computers that work in binary, 256 is a nicer number than 101 (we include 0 as a number).
+So writing 100% duty cycle to pin 5 would look like:
+```C++
+analogWrite(3, 255);
+```
+
+## Motor control pins
+
+Here are the direction and power pins associated with each motor:
+
+
+
 
 Thecommand to do this in C++ is
 ```C++
