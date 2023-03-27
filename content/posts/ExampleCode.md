@@ -135,7 +135,7 @@ void loop(void)
 
 ## platformio.ini
 
-![main](/img/plantformioini_location.PNG)
+![platformio.ini](/img/platformioini_location.PNG)
 
 ```C++
 ; PlatformIO Project Configuration File
