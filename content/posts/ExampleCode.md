@@ -36,6 +36,11 @@ cover:
 #     appendFilePath: true # to append file path to Edit link
 ---
 
+Paste these into main.cpp and platformio.ini respectively:
+
+## main.cpp
+
+![main](/img/main_location.PNG)
 
 ```C++
 #include <Arduino.h>
@@ -127,3 +132,28 @@ void loop(void)
 
 ```
 
+
+## platformio.ini
+
+![main](/img/plantformioini_location.PNG)
+
+```C++
+; PlatformIO Project Configuration File
+;
+;   Build options: build flags, source filter
+;   Upload options: custom upload port, speed and extra flags
+;   Library options: dependencies, extra library storages
+;   Advanced options: extra scripting
+;
+; Please visit documentation for the other options and examples
+; https://docs.platformio.org/page/projectconf.html
+
+[env:teensy41]
+platform = teensy
+board = teensy41
+framework = arduino
+monitor_speed = 9600
+lib_deps = adafruit/Adafruit BNO055@^1.6.1
+            SPI
+
+```
