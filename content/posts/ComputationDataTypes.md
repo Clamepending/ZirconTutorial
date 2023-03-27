@@ -45,6 +45,7 @@ Compute (1234 * (567 % 8) * 9 - 10 + 11*12), then print out "the answer is: (you
 ## Solution
 
 {{< collapse summary="show solution" >}}
+the answer is: 77864
 
 ```C++
 #include <Arduino.h>
