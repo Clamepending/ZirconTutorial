@@ -51,14 +51,11 @@ Adafruit_BNO055 bno = Adafruit_BNO055(55, 0x28, &Wire);
 void CalibrateCompass() {
   bno.begin();
   uint8_t system, gyro, accel, mag = 0;
-  while (mag < 3 || gyro < 3) {
+  while (mag < 3) {
     bno.getCalibration(&system, &gyro, &accel, &mag);
     Serial.println("Calibrate your comapass sensor!");
+    Serial.print(String(mag) + "/3");
     Serial.println();
-    Serial.print(" Gyro=");
-    Serial.print(gyro);
-    Serial.print(" Mag=");
-    Serial.println(mag);
     delay(100);
   }
 }
@@ -69,11 +66,25 @@ double readCompass() {
   return orientationData.orientation.x;
 }
 
+void motor1(int power, boolean direction) {
+  digitalWrite(2, direction);//DIR 1
+  digitalWrite(5, !direction);//DIR 2
+  analogWrite(3, power);//POWER
+}
 
-void setup(void)
-{
-  Serial.begin(115200);
+void motor2(int power, boolean direction) {
+  digitalWrite(8, direction);
+  digitalWrite(7, !direction);
+  analogWrite(6, power);
+}
 
+void motor3(int power, boolean direction) {
+  digitalWrite(12, direction);
+  digitalWrite(11, !direction);
+  analogWrite(4, power);
+}
+
+void initializePins() {
   //initialize motor pins
   pinMode(2, OUTPUT);
   pinMode(3, OUTPUT);
@@ -98,10 +109,15 @@ void setup(void)
   pinMode(10, INPUT);
 
   //PUT YOUR SETUP CODE HERE!
+}
 
 
+void setup(void)
+{
+  Serial.begin(115200);
+  initializePins();
   CalibrateCompass();
-  
+
 }
 
 
@@ -110,7 +126,7 @@ void setup(void)
 void loop(void)
 {
 
-
+  Serial.println("reading sensors ");
   Serial.println("ball sensor 1: " + String(analogRead(14)));
   Serial.println("ball sensor 2: " + String(analogRead(15)));
   Serial.println("ball sensor 3: " + String(analogRead(16)));
@@ -125,9 +141,24 @@ void loop(void)
   Serial.println("current runtime: " + String(millis()) + " milliseconds");
   Serial.println("--------------------------------------");
 
-  //Its important to have a delay if you are just printing because your computer Terminal will lag (be slow) if you print without a delay
-  //but if you are not printing things, removing the delay will make your robot react quicker
-  delay(100);
+
+  //first number is power, second is direction
+  //ex: motor1(100, 1) spins motor 1 at 100/255 speed in one direction
+  //ex: motor1(255, 0) spins motor 1 at 255/255 (100%) speed in the other direction
+  motor1(100, 1);
+  motor2(50, 0);
+  motor3(255, 1);
+  delay(1000); // freeze program for 1 second
+
+  //stop by writing 0 power to all motors (direction doesnt matter)
+  motor1(0, 1);
+  motor2(0, 0);
+  motor3(0, 1);
+  delay(1000); // freeze program for 1 second
+
+
+
+
 }
 
 ```
