@@ -183,7 +183,7 @@ void loop(void)
 platform = teensy
 board = teensy41
 framework = arduino
-monitor_speed = 9600
+monitor_speed = 115200
 lib_deps = adafruit/Adafruit BNO055@^1.6.1
             SPI
 

@@ -115,6 +115,12 @@ SiteVerificationTag = "XYZabc"
 # weight = 10
 
 [[menu.main]]
+identifier = "Example Code"
+name = "Example Code"
+url = "/posts/examplecode/"
+weight = 10
+
+[[menu.main]]
 identifier = "tags"
 name = "tags"
 url = "/tags/"
@@ -125,6 +131,8 @@ identifier = "Robomov.net"
 name = "Robomov.net"
 url = "https://robomov.net"
 weight = 30
+
+
 
 [markup.highlight]
 noClasses = false
