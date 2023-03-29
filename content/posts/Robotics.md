@@ -120,19 +120,28 @@ void loop(void)
   Serial.println("ball sensor 8: " + String(analogRead(23)));
   Serial.println("push button 1: " + String(digitalRead(9)));
   Serial.println("push button 2: " + String(digitalRead(10)));
-  Serial.println("orientation: " + String(readCompass()));
-  Serial.println("current runtime: " + String(millis()) + " milliseconds");
   Serial.println("--------------------------------------");
 }
 
 ```
 
-Each sensor (such as a button) is connected to a pin on the Teensy (the main microcontroller). There are analog and digital sensors. We will talk about digital sensors later. Analog sensors normaly have an output pin that has a varying voltge depending on the state of the sensor. For example, the output pin might be 3.3V when button is pressed, and 0V when the button is not pressed. 
+This code prints out the sensor values for most of the sensors on the Zircon
+
+Each sensor (such as a button) is connected to a pin on the Teensy (the main microcontroller in the picture below). 
+
+![teensy](/img/teensy.PNG)
+
+
+There are analog and digital sensors. We will talk about digital sensors later. 
+
+Analog sensors normaly have an output pin that has a varying voltge depending on the state of the sensor. 
+
+For example, the output pin might be 3.3V when button is pressed, and 0V when the button is not pressed. 
 So we "read" sensors by reading the voltage of the sensor pin.
 
 The command to do this in C++ is
 ```C++
-analogRead();
+analogRead(pin_number);
 ```
 
 To read pin A5 for example, we would write
@@ -151,7 +160,10 @@ to print the data to the computer, we write
 Serial.println(String(sensorData));
 ```
 
-Try uploading and monitoring the program you pasted in above. You should get readings for the sensors on the Zircon. Try turning the ball on and moving it close to the robot to see how the values change.
+Try uploading and monitoring the program you pasted in above. You should get readings for the sensors on the Zircon. 
+
+Try turning the ball on and moving it close to the robot to see how the values change.
+
 Also try pushing the buttons to see how the data from the button changes from a 0 to a 1 when pressed.
 
 
@@ -320,6 +332,7 @@ initializePins();
 function we call in void setup(void)
 
 Below is the explanation for the inner workings of the function. 
+
 FEEL FREE TO SKIP THIS PART if you like.
 
 This is the definition of the initializePins() function you pasted towards the top of your program.
@@ -350,7 +363,9 @@ void initializePins() {
 }
 ```
 
-Any pin that is used (connected to a sensor for example) needs to be initialized. It is just how microcontrollers work. So before you start doing analogRead(), you need to call pinMode(); on each pin you use to be run once at the start.
+Any pin that is used (connected to a sensor for example) needs to be initialized. 
+
+It is just how microcontrollers work. So before you start doing analogRead(), you need to call pinMode(); on each pin you use to be run once at the start.
 
 If we wanted to setup pin A5, we would write
 ```C++
