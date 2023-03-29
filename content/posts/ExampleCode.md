@@ -51,10 +51,11 @@ Adafruit_BNO055 bno = Adafruit_BNO055(55, 0x28, &Wire);
 void CalibrateCompass() {
   bno.begin();
   uint8_t system, gyro, accel, mag = 0;
-  while (mag < 3) {
+  while (mag < 3 || gyro < 3) {
     bno.getCalibration(&system, &gyro, &accel, &mag);
     Serial.println("Calibrate your comapass sensor!");
-    Serial.print(String(mag) + "/3");
+    Serial.println(String(mag) + "/3 magnitometer");
+    Serial.println(String(gyro) + "/3 gyroscope");
     Serial.println();
     delay(100);
   }
