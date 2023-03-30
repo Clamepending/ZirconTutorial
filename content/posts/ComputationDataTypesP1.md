@@ -1,7 +1,7 @@
 ---
-title: "Arrays"
+title: "Operations and Data Types"
 date: 2020-09-15T11:30:03+00:00
-weight: 19
+weight: 14
 # aliases: ["/first"]
 tags: ["software"]
 author: "Mark Ogata"
@@ -11,7 +11,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "Step 18"
+description: "Step 13"
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: true
@@ -36,80 +36,62 @@ cover:
 #     appendFilePath: true # to append file path to Edit link
 ---
 
-{{< youtube id="" >}}
-
 ## Problem
 
-Use an arrary to find the sum of {230, 99, 45, 1, 45}
+Compute (25 % 10), then print out "the answer is: (your computed answer)" from the teensy every second
+
+So if the answer is 21, you should print "the answer is: 21" to the computer every second
 
 HINT:
-we can declare an array as
-```C++
-int listToSum[] = {230, 99, 45, 1, 45};
-```
-and iterate through the elements with a for loop
 
-Lists are indexed starting from 0, so the first element is the 0th element.
+to combine a String and an Integer, we first need to convert the Integer to a String.
 
-To get the 1st element of listToSum we do
+Use String() to do that:
 ```C++
-listToSum[0] // returns 230
-```
+String(3) returns "3"
 
-To get the 5th element of listToSum we do
-```C++
-listToSum[4] // returns 45
+"hello " + String(3) returns "hello 3"
+
+Serial.println("hello " + String(5 + 4)); prints "hello 9" to the computer
+
 ```
 
-To get the ith element (useful in a for loop) of listToSum we do
 ```C++
-listToSum[i]
+int a = 0;
+a = 6 + 9
+Serial.println("hello " + String(a));
 ```
+prints "hello 15" to the computer
 
 ## Solution
 
-
 {{< collapse summary="show solution" >}}
+the answer is: 5
+![5](/img/5.png)
 
 ```C++
 #include <Arduino.h>
 
 void setup() {
-    // put your setup code here, to run once:
 
     Serial.begin(9600);
 
 }   
 
-
 void loop() {
 
-    //define a list and paste in the values
-    int listToSum[] = {230, 99, 45, 1, 45};
-
-
-    //initialize a counter to keep track of the total
-    int total = 0;
-
-    //go through all numbers in listToSum
-    for(int i = 0; i < 5; i++){
-      //add each number to total
-      total = total + listToSum[i];
-
-    }
-
-    //print the total
-    Serial.println("total: " + String(total));
-
-    //make output easier to read
+    // we use a double because it can handle 
+    //very big numbers, floats, and very small numbers.
+    int answer = 25 % 10;
+    
+    //we use String() to convert answer from a double 
+    //to a float to combine it with a string to print it out
+    Serial.println("the answer is: " + String(answer));
+    
+    
     delay(1000);
-
 }
-
-
-
-/**The answer is 420
-**/
 ```
 
 {{< /collapse >}}
+

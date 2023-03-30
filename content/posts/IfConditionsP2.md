@@ -1,7 +1,7 @@
 ---
 title: "If statements"
 date: 2020-09-15T11:30:03+00:00
-weight: 16
+weight: 16.2
 # aliases: ["/first"]
 tags: ["software"]
 author: "Mark Ogata"
@@ -40,7 +40,10 @@ cover:
 
 ## Problem
 
-modify the variable x so that the robot print "correct!" every second.
+fill in the condition (REPLACE THIS) in the if statement to print out all the numbers from 5 to 20 (include 5 and 20).
+
+DONT modify the for loop.
+
 
 ```C++
 #include <Arduino.h>
@@ -53,14 +56,14 @@ void setup() {
 }   
 
 void loop() {
-    int x = 420;
-    
-    
-    if (x == 21) {
-        Serial.println("correct!");
-    } else {
-        Serial.println("keep trying");
+    for (int i = 0; i < 100; i = i + 1) {
+        if (REPLACE THIS) {
+        Serial.println(String(i));
+        } 
     }
+    
+    
+    
 
     //make the output readable by slowing it down
     delay(1000);
@@ -68,18 +71,40 @@ void loop() {
 
 ```
 
-HINT: == checks if two numbers are equal.
+HINT:
+
 ```C++
-3 == 3 // THIS IS TRUE
+&&
+```
+is an AND statement.
+It returns true if both conditions are true.
+
+```C++
+true && true // returns true
 ```
 ```C++
-3 == 4// THIS IS FALSE
+true && false // returns false
+```
+```C++
+false && true // returns false
+```
+```C++
+false && false // returns false
+```
+
+using it in an if statment to see if x is between 3 and 5 looks like this:
+
+```C++
+if (x > 3 && x < 5) {
+    // code to execute when x is between 3 and 5
+} 
 ```
 
 
 ## Solution
 
 {{< collapse summary="show solution" >}}
+
 ```C++
 #include <Arduino.h>
 
@@ -91,20 +116,47 @@ void setup() {
 }   
 
 void loop() {
-    int x = 21;
-    
-    
-    if (x == 21) {
-        Serial.println("correct!");
-    } else {
-        Serial.println("keep trying");
+    for (int i = 0; i < 100; i = i + 1) {
+        if (i > 4 && i < 21) {
+        Serial.println(String(i));
+        } 
     }
+    
+    
+    
 
     //make the output readable by slowing it down
     delay(1000);
 }
 
 ```
+there are other ways to do this, such as using >= like this
+```C++
+#include <Arduino.h>
+
+void setup() {
+    // put your setup code here, to run once:
+
+    Serial.begin(9600);
+
+}   
+
+void loop() {
+    for (int i = 0; i < 100; i = i + 1) {
+        if (i >= 5 && i <= 20) {
+        Serial.println(String(i));
+        } 
+    }
+    
+    
+    
+
+    //make the output readable by slowing it down
+    delay(1000);
+}
+
+```
+
 
 {{< /collapse >}}
 

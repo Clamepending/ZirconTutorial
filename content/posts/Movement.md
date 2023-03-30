@@ -179,14 +179,22 @@ motor2(255, 1);
 would make motor 2 spin in direction 1 (the other direction) at 255/255 power (100%)
 
 
-![motor labels](/img/motorlabels.PNG)
+![motor labels](/img/motorlabels.png)
 The arrows indicate which way the motor spins when direction is set to 0.
+
+
+### PUT YOUR ROBOT ON SOMETHING ROUND (like a roll of tape) so the motors are FLOATING
+
+![Zircon on a roll of tape](/img/floatingZircon.jpg)
+
+we do this so that the robot doesnt suddenly run off the table at 100% speed
+
 
 Now try uploading and running the program. The robot should move and then stop.
 
 ## Problem
 
-Change the program to make the robot go forwards.
+Change the program to make the robot go forwards. (at 100/255 speed)
 
 ## Solution
 
@@ -252,8 +260,8 @@ void loop(void)
 {
 
   motor1(0,0); // stop motor 1
-  motor2(255, 0); // make motor 2 go at 100% speed in direction 0
-  motor3(255,0); // make motor 3 go at 100% speed in direction 0
+  motor2(100, 0); // make motor 2 go at 100% speed in direction 0
+  motor3(100, 0); // make motor 3 go at 100% speed in direction 0
 
 }
 ```

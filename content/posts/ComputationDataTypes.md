@@ -40,9 +40,11 @@ cover:
 
 ## Problem
 
-Compute (1234 * (567 % 8) * 9 - 10 + 11*12), then print out "the answer is: (your computed answer)" from the teensy every second
+Compute (1 + 1), then print out "the answer is: (your computed answer)" from the teensy every second
 
 So if the answer is 21, you should print "the answer is: 21" to the computer every second
+
+![2](/img/2.png)
 
 HINT:
 
@@ -68,7 +70,6 @@ prints "hello 15" to the computer
 ## Solution
 
 {{< collapse summary="show solution" >}}
-the answer is: 77864
 
 ```C++
 #include <Arduino.h>
@@ -83,7 +84,7 @@ void loop() {
 
     // we use a double because it can handle 
     //very big numbers, floats, and very small numbers.
-    int answer = 1234 * (567 % 8) * 9 - 10 + 11*12; 
+    int answer = 1 + 1; 
     
     //we use String() to convert answer from a double 
     //to a float to combine it with a string to print it out

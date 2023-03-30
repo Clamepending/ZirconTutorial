@@ -1,7 +1,7 @@
 ---
 title: "Variables, Comments, Loops"
 date: 2020-09-15T11:30:03+00:00
-weight: 15
+weight: 15.6
 # aliases: ["/first"]
 tags: ["software"]
 author: "Mark Ogata"
@@ -40,13 +40,27 @@ cover:
 
 ## Problem
 
-Print "fish n" with n in that string replaced with numbers from 0 to 9
+Print "dog n" with n in that string replaced with numbers from 50 to 0.
 
-once every second
+decreasing by 2 every time
+
+repeat once every second.
 
 output should look like:
-![fishfor1](/img/fishfor1.png)
 
+dog 50
+
+dog 48
+
+dog 46
+
+dog 44
+
+...
+
+dog 2
+
+dog 0
 
 ## Solution
 
@@ -64,13 +78,41 @@ output should look like:
     
     void loop() {
     
-        for(int i = 0; i < 10; i++){
-            Serial.println("fish" + String(i));
+        for(int i = 50; i > -1; i = i - 2){
+            Serial.println("dog" + String(i));
         }
         
         
         delay(1000);
     }
+```
+
+instead of > -1 we can do >= 0
+
+\>= 0 mens greater than or equal to (so 0 >= 0 is true)
+
+The code below also works
+```C++
+#include <Arduino.h>
+
+    void setup() {
+        // put your setup code here, to run once:
+    
+        Serial.begin(9600);
+    
+    }   
+    
+    void loop() {
+    
+        for(int i = 50; i >= 0; i = i - 2){
+            Serial.println("dog" + String(i));
+        }
+        
+        
+        delay(1000);
+    }
+```
+
 
 {{< /collapse >}}
 

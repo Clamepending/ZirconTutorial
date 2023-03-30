@@ -1,7 +1,7 @@
 ---
-title: "Arrays"
+title: "If statements"
 date: 2020-09-15T11:30:03+00:00
-weight: 19
+weight: 16.1
 # aliases: ["/first"]
 tags: ["software"]
 author: "Mark Ogata"
@@ -11,7 +11,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "Step 18"
+description: "Step 15"
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: true
@@ -40,31 +40,37 @@ cover:
 
 ## Problem
 
-Use an arrary to find the sum of {230, 99, 45, 1, 45}
+fill in the condition (REPLACE THIS) in the if statement to print out all the numbers from 0 to 20 (include 0 and 20).
 
-HINT:
-we can declare an array as
+DONT modify the for loop.
+
+
 ```C++
-int listToSum[] = {230, 99, 45, 1, 45};
-```
-and iterate through the elements with a for loop
+#include <Arduino.h>
 
-Lists are indexed starting from 0, so the first element is the 0th element.
+void setup() {
+    // put your setup code here, to run once:
 
-To get the 1st element of listToSum we do
-```C++
-listToSum[0] // returns 230
+    Serial.begin(9600);
+
+}   
+
+void loop() {
+    for (int i = 0; i < 100; i = i + 1) {
+        if (REPLACE THIS) {
+        Serial.println(String(i));
+        } 
+    }
+    
+    
+    
+
+    //make the output readable by slowing it down
+    delay(1000);
+}
+
 ```
 
-To get the 5th element of listToSum we do
-```C++
-listToSum[4] // returns 45
-```
-
-To get the ith element (useful in a for loop) of listToSum we do
-```C++
-listToSum[i]
-```
 
 ## Solution
 
@@ -81,35 +87,21 @@ void setup() {
 
 }   
 
-
 void loop() {
-
-    //define a list and paste in the values
-    int listToSum[] = {230, 99, 45, 1, 45};
-
-
-    //initialize a counter to keep track of the total
-    int total = 0;
-
-    //go through all numbers in listToSum
-    for(int i = 0; i < 5; i++){
-      //add each number to total
-      total = total + listToSum[i];
-
+    for (int i = 0; i < 100; i = i + 1) {
+        if (i < 21) {
+        Serial.println(String(i));
+        } 
     }
+    
+    
+    
 
-    //print the total
-    Serial.println("total: " + String(total));
-
-    //make output easier to read
+    //make the output readable by slowing it down
     delay(1000);
-
 }
 
-
-
-/**The answer is 420
-**/
 ```
 
 {{< /collapse >}}
+

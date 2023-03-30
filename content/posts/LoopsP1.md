@@ -1,7 +1,7 @@
 ---
-title: "Serial, Printing, Delay"
+title: "Variables, Comments, Loops"
 date: 2020-09-15T11:30:03+00:00
-weight: 13
+weight: 15.1
 # aliases: ["/first"]
 tags: ["software"]
 author: "Mark Ogata"
@@ -11,7 +11,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "Step 9"
+description: "Step 14"
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: true
@@ -36,40 +36,16 @@ cover:
 #     appendFilePath: true # to append file path to Edit link
 ---
 
-{{< youtube id="xTUMSJTGjw0" >}}
-
-
-
-
-## void setup(void)
-
-The code inside setup(void) runs once at the start
-
-The commands inside 
-```C++
-void setup(void)
-{
-
-}
-```
-run once when the robot powers on. It is used to start or initialize sensors. Put code here if you want to do something at the very start of the program.
-
-## void loop(void)
-
-The commands inside 
-```C++
-void loop(void)
-{
-
-}
-```
-run forever over and over again after setup(void). This is the main part of the program. Put code here if you want to do something over and over again (most code goes here) such as always looking for a ball.
+{{< youtube id="" >}}
 
 ## Problem
 
-print your name to the serial port every 0.7 seconds forever (until you press Ctrl + C to quit monitor)
+Print "fish n" with n in that string replaced with numbers from 1 to 9
 
-![motor labels](/img/yourname.png)
+once every second
+
+output should look like:
+![fishforstartingat1](/img/fishforstartingat1.png)
 
 
 ## Solution
@@ -78,25 +54,23 @@ print your name to the serial port every 0.7 seconds forever (until you press Ct
 
 ```C++
 #include <Arduino.h>
- 
-void setup() {
-    // put your setup code here, to run once:
- 
-    Serial.begin(9600);
- 
-}   
- 
-void loop() {
-    // put your main code here, to run repeatedly
- 
-    String yourName = "Mark";
-    Serial.println(yourName);
+
+    void setup() {
+        // put your setup code here, to run once:
     
-    delay(700);
-}
-```
+        Serial.begin(9600);
+    
+    }   
+    
+    void loop() {
+    
+        for(int i = 1; i < 10; i++){
+            Serial.println("fish" + String(i));
+        }
+        
+        
+        delay(1000);
+    }
 
 {{< /collapse >}}
-
-
 

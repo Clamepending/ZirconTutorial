@@ -1,7 +1,7 @@
 ---
-title: "Arrays"
+title: "If statements"
 date: 2020-09-15T11:30:03+00:00
-weight: 19
+weight: 16.4
 # aliases: ["/first"]
 tags: ["software"]
 author: "Mark Ogata"
@@ -11,7 +11,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "Step 18"
+description: "Step 15"
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: true
@@ -36,38 +36,53 @@ cover:
 #     appendFilePath: true # to append file path to Edit link
 ---
 
-{{< youtube id="" >}}
 
 ## Problem
 
-Use an arrary to find the sum of {230, 99, 45, 1, 45}
+print out all the numbers divisible by 3 from 0 to 21 (include 0 and 21) using an if statement.
+
+Divisible means dividing 21 by it results in no remainder. 
+
+example:
+
+21 is divisible by 3 because 21/3 = 7
+
+22 is not divisible by 3 because 22/3 = 7 with remainder 1
+
+output should look like:
+
+0
+
+3
+
+6
+
+9
+
+...
+
+18
+
+21
 
 HINT:
-we can declare an array as
+
+the % operation will be useful. % returns the remainder:
 ```C++
-int listToSum[] = {230, 99, 45, 1, 45};
+22 % 3 //returns 1
 ```
-and iterate through the elements with a for loop
-
-Lists are indexed starting from 0, so the first element is the 0th element.
-
-To get the 1st element of listToSum we do
 ```C++
-listToSum[0] // returns 230
+31 % 7 //returns 3
 ```
-
-To get the 5th element of listToSum we do
 ```C++
-listToSum[4] // returns 45
+9 % 3 // returns 0
 ```
 
-To get the ith element (useful in a for loop) of listToSum we do
-```C++
-listToSum[i]
-```
+HINT 2:
+this program should be VERY similar to the previous one.
+
 
 ## Solution
-
 
 {{< collapse summary="show solution" >}}
 
@@ -81,35 +96,22 @@ void setup() {
 
 }   
 
-
 void loop() {
-
-    //define a list and paste in the values
-    int listToSum[] = {230, 99, 45, 1, 45};
-
-
-    //initialize a counter to keep track of the total
-    int total = 0;
-
-    //go through all numbers in listToSum
-    for(int i = 0; i < 5; i++){
-      //add each number to total
-      total = total + listToSum[i];
-
+    for (int i = 0; i < 21; i = i + 1) {
+        if (i % 3 == 0) {
+        Serial.println(String(i));
+        } 
     }
+    
+    
+    
 
-    //print the total
-    Serial.println("total: " + String(total));
-
-    //make output easier to read
+    //make the output readable by slowing it down
     delay(1000);
-
 }
 
-
-
-/**The answer is 420
-**/
 ```
 
+
 {{< /collapse >}}
+

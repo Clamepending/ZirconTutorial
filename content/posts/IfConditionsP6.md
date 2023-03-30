@@ -1,7 +1,7 @@
 ---
-title: "Arrays"
+title: "If statements"
 date: 2020-09-15T11:30:03+00:00
-weight: 19
+weight: 16.4
 # aliases: ["/first"]
 tags: ["software"]
 author: "Mark Ogata"
@@ -11,7 +11,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "Step 18"
+description: "Step 15"
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: true
@@ -20,7 +20,7 @@ hideSummary: false
 searchHidden: true
 # ShowReadingTime: true
 ShowBreadCrumbs: true
-ShowPostNavLinks: true
+ShowPostNavLinks: true  
 ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: true
@@ -36,38 +36,31 @@ cover:
 #     appendFilePath: true # to append file path to Edit link
 ---
 
-{{< youtube id="" >}}
 
 ## Problem
 
-Use an arrary to find the sum of {230, 99, 45, 1, 45}
+find all numbers that divide 21 (factors of 21).
 
-HINT:
-we can declare an array as
+HINT: Use a for loop and if statement with %.
+
+reminder:
+
+% returns the remainder:
 ```C++
-int listToSum[] = {230, 99, 45, 1, 45};
+22 % 3 //returns 1
 ```
-and iterate through the elements with a for loop
-
-Lists are indexed starting from 0, so the first element is the 0th element.
-
-To get the 1st element of listToSum we do
 ```C++
-listToSum[0] // returns 230
+31 % 7 //returns 3
 ```
-
-To get the 5th element of listToSum we do
 ```C++
-listToSum[4] // returns 45
+9 % 3 // returns 0
 ```
 
-To get the ith element (useful in a for loop) of listToSum we do
-```C++
-listToSum[i]
-```
+
 
 ## Solution
 
+Answer: 1, 3, 7, 21
 
 {{< collapse summary="show solution" >}}
 
@@ -81,35 +74,23 @@ void setup() {
 
 }   
 
-
 void loop() {
+    
+    for (int i = 1; i < 22; i++) {
 
-    //define a list and paste in the values
-    int listToSum[] = {230, 99, 45, 1, 45};
-
-
-    //initialize a counter to keep track of the total
-    int total = 0;
-
-    //go through all numbers in listToSum
-    for(int i = 0; i < 5; i++){
-      //add each number to total
-      total = total + listToSum[i];
-
+        // check if i divides 21
+        if (21 % i == 0) {
+            Serial.print(String(i) + ", ");
+        }
     }
+    Serial.println();
 
-    //print the total
-    Serial.println("total: " + String(total));
-
-    //make output easier to read
+    //make the output readable by slowing it down
     delay(1000);
-
 }
 
-
-
-/**The answer is 420
-**/
 ```
 
+
 {{< /collapse >}}
+
