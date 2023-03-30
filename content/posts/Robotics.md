@@ -125,6 +125,8 @@ void loop(void)
 
 ```
 
+Dont worry about the code at the top. The println() commands in the void loop(void) should look familiar.
+
 This code prints out the sensor values for most of the sensors on the Zircon
 
 Each sensor (such as a button) is connected to a pin on the Teensy (the main microcontroller in the picture below). 
@@ -166,10 +168,11 @@ Try turning the ball on and moving it close to the robot to see how the values c
 
 Also try pushing the buttons to see how the data from the button changes from a 0 to a 1 when pressed.
 
-
-## Example
+## Problem
 
 This is an example that reads the value of sensor on pin 9 (a push button) and prints it in the serial monitor on your computer every second.
+
+(you can ignore things outside void loop())
 
 ```C++
 #include <Arduino.h>
@@ -242,9 +245,7 @@ Copy-paste and upload this to see if it works. Make sure you click the monitor b
 
 Pushing the button labeled pin 9 should change the number being printed.
 
-## Problem
-
-Modify the above program to print out the sensor data of the right pushbutton (connected to pin 10 instead of 9).
+Modify the program to print out the sensor data of the right pushbutton (connected to pin 10 instead of 9).
 
 You should see the numbers react in real time when you press the button.
 
@@ -311,7 +312,7 @@ void setup(void)
 
 void loop() {
 
-    int sensorData = analogRead(10);
+    int sensorData = analogRead(10);// THIS IS THE ONLY LINE THAT CHANGED
 
     Serial.println(String(sensorData));    
     
@@ -323,6 +324,8 @@ void loop() {
 
 ## Initialization
 
+FEEL FREE TO SKIP THIS PART if you like.
+
 This step is easy to forget but is very important. 
 
 This is mostly taken care of for you in the 
@@ -331,9 +334,7 @@ initializePins();
 ```
 function we call in void setup(void)
 
-Below is the explanation for the inner workings of the function. 
-
-FEEL FREE TO SKIP THIS PART if you like.
+Below is the explanation for the inner workings of initializePins(); 
 
 This is the definition of the initializePins() function you pasted towards the top of your program.
 ```C++

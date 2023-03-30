@@ -38,6 +38,33 @@ cover:
 
 {{< youtube id="xTUMSJTGjw0" >}}
 
+
+
+
+## void setup(void)
+
+The code inside setup(void) runs once at the start
+
+The commands inside 
+```C++
+void setup(void)
+{
+
+}
+```
+run once when the robot powers on. It is used to start or initialize sensors. Put code here if you want to do something at the very start of the program.
+
+## void loop(void)
+
+The commands inside 
+```C++
+void loop(void)
+{
+
+}
+```
+run forever over and over again after setup(void). This is the main part of the program. Put code here if you want to do something over and over again (most code goes here) such as always looking for a ball.
+
 ## Problem
 
 print your name to the serial port every 0.7 seconds forever (until you press Ctrl + C to quit monitor)

@@ -40,7 +40,14 @@ cover:
 
 ## Problem
 
-Use an arrary to find the sum of {230, 345, 45, 1, 45, 95, 5325, 53, 23, 5, 46, 7, 8, 5, 6, 5, 46, 6}
+Use an arrary to find the sum of {230, 99, 45, 1, 45}
+
+HINT:
+we can declare an array as
+```C++
+int listToSum[] = {230, 99, 45, 1, 45};
+```
+and iterate through the elements with a for loop
 
 ## Solution
 
@@ -61,22 +68,14 @@ void setup() {
 void loop() {
 
     //define a list and paste in the values
-    int listToSum[] = {230, 345, 45, 1, 45, 95, 5325, 53, 23, 
-5, 46, 7, 8, 5, 6, 5, 46, 6};
+    int listToSum[] = {230, 99, 45, 1, 45};
 
 
     //initialize a counter to keep track of the total
     int total = 0;
 
-    //sizeof(listToSum) returns the size in bytes
-    //each int is 4 bytes so we have to divide
-    //sizeof(listToSum) by sizeof(int) to get
-    //the length of the list
-    int sizeOFListToSum = sizeof(listToSum)/sizeof(int);
-
     //go through all numbers in listToSum
-    for(int i = 0; i < sizeOFListToSum; i++){
-
+    for(int i = 0; i < 5; i++){
       //add each number to total
       total = total + listToSum[i];
 
@@ -92,10 +91,7 @@ void loop() {
 
 
 
-/**The answer is 6296
- * Output:
-total: 6296
-total: 6296
+/**The answer is 420
 **/
 ```
 

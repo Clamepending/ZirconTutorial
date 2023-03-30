@@ -42,6 +42,29 @@ cover:
 
 Compute (1234 * (567 % 8) * 9 - 10 + 11*12), then print out "the answer is: (your computed answer)" from the teensy every second
 
+So if the answer is 21, you should print "the answer is: 21" to the computer every second
+
+HINT:
+
+to combine a String and an Integer, we first need to convert the Integer to a String.
+
+Use String() to do that:
+```C++
+String(3) returns "3"
+
+"hello " + String(3) returns "hello 3"
+
+Serial.println("hello " + String(5 + 4)); prints "hello 9" to the computer
+
+```
+
+```C++
+int a = 0;
+a = 6 + 9
+Serial.println("hello " + String(a));
+```
+prints "hello 15" to the computer
+
 ## Solution
 
 {{< collapse summary="show solution" >}}
@@ -60,7 +83,7 @@ void loop() {
 
     // we use a double because it can handle 
     //very big numbers, floats, and very small numbers.
-    double answer = 1234 * (567 % 8) * 9 - 10 + 11*12; 
+    int answer = 1234 * (567 % 8) * 9 - 10 + 11*12; 
     
     //we use String() to convert answer from a double 
     //to a float to combine it with a string to print it out

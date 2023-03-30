@@ -40,12 +40,24 @@ cover:
 
 ## Problem
 
-find the prime factors of 1294892647
+find all numbers that divide 21 (factors of 21).
+
+HINT: % will be useful
+
+a % b returns the remainder when a is divided by b
+
+so 9 % 2 will return 1
+
+13 % 3 will return 1
+
+24 % 10 will return 4
 
 ## Solution
 
-{{< collapse summary="show solution" >}}
+Answer: 1, 3, 7, 21
 
+{{< collapse summary="show solution" >}}
+1, 3, 7, 21
 ```C++
 #include <Arduino.h>
 
@@ -57,50 +69,24 @@ void setup() {
 }   
 
 void loop() {
-    //the strategy here is to start at 2 and see if any 
-    //number divides 1294892647 with remainder 0
-    //if not, try a higher number until you can
-    //then print that out and divide that factor out of 
-    //1294892647 and restart the process until you get 1
+    int a = 21;
+    
+    
+    for (int i = 1; i < a + 1; i++) {
 
-    int number = 1294892647;
-
-    //start by trying to divide by 2 because everything 
-    //is divisible by 1
-
-    int testFactor = 2;
-
-    Serial.println("Factors are: ");
-
-    //while there are factors left
-    while (number > 1){
-
-        //if testFactor is a factor of number
-        if(number % testFactor == 0){
-            //divide out testFactor from number
-            number = number/testFactor;
-
-            //print out the factor that was found
-            Serial.println(String(testFactor));
-
-            //reset the testFactor
-            testFactor = 1;
+        // check if i divides a
+        if (a % i == 0) {
+            Serial.print(String(i) + ", ");
         }
-
-        //increase the test factor by 1
-        testFactor = testFactor + 1;
-      
     }
+    Serial.println();
 
     //make the output readable by slowing it down
     delay(1000);
 }
 
 /**
- * Factors are: 
-59
-2411
-9103
+ * 1, 3, 7, 21
 **/
     
 ```
