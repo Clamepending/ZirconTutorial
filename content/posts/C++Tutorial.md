@@ -47,7 +47,7 @@ each problem builds on the previous, so not understanding one will make the next
 
 There are MULTIPLE ways to solve the problem. Dont worry if your solution doesnt look exactly like the answer!
 
-## Stuck? GOOGLE IT!
+## Stuck? GOOGLE IT! 
 
 It is normal to not get it on the first try, keep at it!
 

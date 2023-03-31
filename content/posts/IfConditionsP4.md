@@ -42,6 +42,21 @@ cover:
 
 fill in the condition (REPLACE THIS) in the if statement to print out all the even numbers from 0 to 21 (include 0).
 
+if we have a variable
+```C++
+int a = 5;
+```
+
+```C++
+a % 2 == 0 //returns false
+```
+Checks if a is even.
+
+```C++
+a % 2 == 1 //returns true
+```
+
+
 DONT modify the for loop.
 
 

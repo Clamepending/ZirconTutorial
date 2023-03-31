@@ -67,9 +67,9 @@ run forever over and over again after setup(void). This is the main part of the 
 
 ## Problem
 
-print your name to the serial port every 0.7 seconds forever (until you press Ctrl + C to quit monitor)
+print "YO" to the serial port every 0.5 seconds (500 milliseconds) forever (until you press Ctrl + C to quit monitor)
 
-![motor labels](/img/yourname.png)
+![YO](/img/.png)
 
 
 ## Solution
@@ -84,15 +84,14 @@ void setup() {
  
     Serial.begin(9600);
  
-}   
+}   s
  
 void loop() {
     // put your main code here, to run repeatedly
  
-    String yourName = "Mark";
-    Serial.println(yourName);
+    Serial.println("YO");
     
-    delay(700);
+    delay(500);
 }
 ```
 

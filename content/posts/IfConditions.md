@@ -40,7 +40,7 @@ cover:
 
 ## Problem
 
-modify the variable x so that the robot print "correct!" every second.
+modify the variable x so that the if statement prints "correct!"
 
 ```C++
 #include <Arduino.h>
@@ -75,6 +75,10 @@ HINT: == checks if two numbers are equal.
 ```C++
 3 == 4// THIS IS FALSE
 ```
+
+HINT 2:
+
+Change the number 420 to another number
 
 
 ## Solution
