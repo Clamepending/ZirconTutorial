@@ -69,7 +69,7 @@ run forever over and over again after setup(void). This is the main part of the 
 
 print "YO" to the serial port every 0.5 seconds (500 milliseconds) forever (until you press Ctrl + C to quit monitor)
 
-![YO](/img/.png)
+![YO](/img/yo.png)
 
 
 ## Solution
@@ -84,7 +84,7 @@ void setup() {
  
     Serial.begin(9600);
  
-}   s
+} 
  
 void loop() {
     // put your main code here, to run repeatedly
