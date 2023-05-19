@@ -1,5 +1,5 @@
 ---
-title: "Parts List"
+title: "STEP 1"
 date: 2020-09-15T11:30:03+00:00
 weight: 1
 # aliases: ["/first"]
@@ -11,7 +11,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "Step 0"
+description: "Parts List"
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: true
@@ -71,3 +71,6 @@ contact mineko@robomov.net if any are missing.
 4. PLIERS
 5. WIRE CUTTERS
 6. VOLTMETER
+
+
+# Click "Next" on the bottom right of this page to go to the next step!

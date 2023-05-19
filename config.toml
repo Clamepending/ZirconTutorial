@@ -70,7 +70,7 @@ tocopen = false
 
   [params.homeInfoParams]
   Title = "Welcome to Zircon"
-  Content = "To get started, click on Parts List"
+  Content = "To get started, click on Step 1"
 
   [[params.socialIcons]]
   name = "twitter"

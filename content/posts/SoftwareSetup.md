@@ -36,9 +36,13 @@ cover:
 #     appendFilePath: true # to append file path to Edit link
 ---
 
+We will now be programming the Zircon.
 
+Your Zircon should look like this
 
 ![Finished Motors](/img/mainPhoto.jpg)
+
+Watch the video to get started on the first step: downloading a code editor.
 
 ## Materials used
 
