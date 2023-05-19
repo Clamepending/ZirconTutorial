@@ -36,7 +36,7 @@ cover:
 #     appendFilePath: true # to append file path to Edit link
 ---
 
-{{< youtube id="" >}}
+
 
 ## Problem
 
