@@ -43,85 +43,70 @@ We will use C++ to read sensor data and actuate motors.
 
 Copy and paste this into your main.cpp file:
 
-![main](/img/main_location.PNG)
+![main](/img/mainnavigation.png)
 
 ```C++
 #include <Arduino.h>
-
-void motor1(int power, boolean direction) {
-  digitalWrite(2, direction);//DIR 1
-  digitalWrite(5, !direction);//DIR 2
-  analogWrite(3, power);//POWER
-}
-
-void motor2(int power, boolean direction) {
-  digitalWrite(8, direction);
-  digitalWrite(7, !direction);
-  analogWrite(6, power);
-}
-
-void motor3(int power, boolean direction) {
-  digitalWrite(12, direction);
-  digitalWrite(11, !direction);
-  analogWrite(4, power);
-}
-
-void initializePins() {
-  //initialize motor pins
-  pinMode(2, OUTPUT);
-  pinMode(3, OUTPUT);
-  pinMode(4, OUTPUT);
-  pinMode(5, OUTPUT);
-  pinMode(6, OUTPUT);
-  pinMode(7, OUTPUT);
-  pinMode(8, OUTPUT);
-  pinMode(11, OUTPUT);
-  pinMode(12, OUTPUT);
-
-  //initialize ball sensor pins and line sensor pins
-  pinMode(14, INPUT);
-  pinMode(15, INPUT);
-  pinMode(16, INPUT);
-  pinMode(17, INPUT);
-  pinMode(20, INPUT);
-  pinMode(21, INPUT);
-  pinMode(22, INPUT);
-  pinMode(23, INPUT);
-  pinMode(9, INPUT);
-  pinMode(10, INPUT);
-}
+#include <zirconLib.h>
 
 
 void setup(void)
 {
-  Serial.begin(115200); // WE NEED THIS TO PRINT THINGS TO THE COMPUTER
-  initializePins();
-
-  //PUT YOUR SETUP CODE HERE!
-
+  Serial.begin(115200);
+  InitializeZircon();
 
 }
-
-
 
 
 void loop(void)
 {
-    // PUT YOUR MAIN PROGRAM HERE
 
   Serial.println("reading sensors ");
-  Serial.println("ball sensor 1: " + String(analogRead(14)));
-  Serial.println("ball sensor 2: " + String(analogRead(15)));
-  Serial.println("ball sensor 3: " + String(analogRead(16)));
-  Serial.println("ball sensor 4: " + String(analogRead(17)));
-  Serial.println("ball sensor 5: " + String(analogRead(20)));
-  Serial.println("ball sensor 6: " + String(analogRead(21)));
-  Serial.println("ball sensor 7: " + String(analogRead(22)));
-  Serial.println("ball sensor 8: " + String(analogRead(23)));
-  Serial.println("push button 1: " + String(digitalRead(9)));
-  Serial.println("push button 2: " + String(digitalRead(10)));
+  Serial.println("ball sensor 1: " + String(readBall(1)));
+  Serial.println("ball sensor 2: " + String(readBall(2)));
+  Serial.println("ball sensor 3: " + String(readBall(3)));
+  Serial.println("ball sensor 4: " + String(readBall(4)));
+  Serial.println("ball sensor 5: " + String(readBall(5)));
+  Serial.println("ball sensor 6: " + String(readBall(6)));
+  Serial.println("ball sensor 7: " + String(readBall(7)));
+  Serial.println("ball sensor 8: " + String(readBall(8)));
+  Serial.println("push button 1: " + String(readButton(1)));
+  Serial.println("push button 2: " + String(readButton(2)));
+  Serial.println("orientation: " + String(readCompass()));
+  Serial.println("current runtime: " + String(millis()) + " milliseconds");
   Serial.println("--------------------------------------");
+
 }
+
+```
+
+
+## platformio.ini
+platformio.ini is the configuration file for the project. ou can find it in the file finder on the left side
+If you get any library errors or board version errors, this is the place to look.
+
+![platformio.ini](/img/filenavigation.png)
+
+paste the following code into platformio.ini
+
+```C++
+; PlatformIO Project Configuration File
+;
+;   Build options: build flags, source filter
+;   Upload options: custom upload port, speed and extra flags
+;   Library options: dependencies, extra library storages
+;   Advanced options: extra scripting
+;
+; Please visit documentation for the other options and examples
+; https://docs.platformio.org/page/projectconf.html
+
+[env:teensy41]
+platform = teensy
+board = teensy41
+framework = arduino
+monitor_speed = 115200
+lib_deps = adafruit/Adafruit BNO055@^1.6.1
+            SPI
 
 ```
 
