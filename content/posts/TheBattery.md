@@ -67,25 +67,49 @@ cover:
 3. BIG AND SMALL PHILLIPS HEAD SCREW DRIVER
 4. PLIERS
 5. WIRE CUTTERS
-6. VOLTMETER
 
 
 
-## Soldering
-
-If you do not know how to solder, it is recommended you practice first with something like https://www.sparkfun.com/products/14635 or a spare board before this.
-
-Soldering is used to make an electrical connection between two parts. It involves melting the solder with the soldering iron (at 250° - 350°C) and touching the molten solder onto where the connection is needed. There are many excellent soldering tutorials on youtube like the one below.
-
-Hint: To keep the female t connector from deforming, it is a good idea to plug the male one in to keep the shape while soldering.
-
-{{< youtube id="VxMV6wGS3NY" >}}
+## What is Soldering?
 
 
-Solder the black wire to the horizontal pin and red wire to the vertica pin of the T connector.
+Soldering is used to make an electrical connection between two parts. It involves melting the solder with the soldering iron (at 250° - 350°C) and touching the molten solder onto where the connection is needed.
 
-![Battery Connector](/img/steps/BatteryTConnectorBack.jpg)
+If you want extra practice before getting started on the kit, you can use something like https://www.sparkfun.com/products/14635.
 
-The result should look like this:
+https://www.youtube.com/watch?v=AqvHogekDI4&t=120s
 
-![Parts List](/img/steps/TheBattery.jpg)
+## Soldering practice
+
+To practice soldering, put some solder on the two big square pads on the Zircon as shown below.
+
+Tip: Don't hold the soldering iron to any part for a long period of time, because that could damage the part. If you find yourself heating up a region for more than 30 seconds, you should let the board cool for 20 seconds before you try again.
+
+(video)
+
+(picture)
+
+(picture after)
+
+
+## Battery port
+
+We will now install the battery port.
+
+Find the red T-connector
+
+(image)
+
+Put it in the slot on the main board. Make sure your board is right side up as in the picture.
+
+(image before)
+
+(image after)
+
+Turn the board over and solder the connector to the board.
+
+(video)
+
+Afterwards your board should look like this.
+
+(image)

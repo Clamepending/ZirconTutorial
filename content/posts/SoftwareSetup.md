@@ -56,3 +56,8 @@ Watch the video to get started on the first step: downloading a code editor.
 
 
 
+
+[Download VS Code](https://code.visualstudio.com/download)
+
+
+
