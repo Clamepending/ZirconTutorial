@@ -52,7 +52,7 @@ Copy and paste this into your main.cpp file:
 
 void setup(void)
 {
-  Serial.begin(115200);
+  Serial.begin(9600);
   InitializeZircon();
 
 }
@@ -82,7 +82,7 @@ void loop(void)
 
 
 ## platformio.ini
-platformio.ini is the configuration file for the project. ou can find it in the file finder on the left side
+platformio.ini is the configuration file for the project. You can find it in the file finder on the left side
 If you get any library errors or board version errors, this is the place to look.
 
 ![platformio.ini](/img/filenavigation.png)
@@ -110,9 +110,19 @@ lib_deps = adafruit/Adafruit BNO055@^1.6.1
 
 ```
 
-Dont worry about the code at the top. The println() commands in the void loop(void) should look familiar.
+Dont worry if you dont understand the code yet, we will explain it below. The println() commands in the void loop(void) should look familiar.
 
-This code prints out the sensor values for most of the sensors on the Zircon
+This code prints out the sensor values for most of the sensors on the Zircon.
+
+
+Try uploading and monitoring the program you pasted in above. You should get readings for the sensors on the Zircon. 
+
+Try turning the ball on and moving it close to the robot to see how the values change.
+
+Also try pushing the buttons to see how the data from the button changes from a 0 to a 1 when pressed.
+
+
+### Explanation
 
 Each sensor (such as a button) is connected to a pin on the Teensy (the main microcontroller in the picture below). 
 
@@ -121,118 +131,118 @@ Each sensor (such as a button) is connected to a pin on the Teensy (the main mic
 
 There are analog and digital sensors. We will talk about digital sensors later. 
 
-Analog sensors normaly have an output pin that has a varying voltge depending on the state of the sensor. 
+Analog sensors display a range of values depending on the state of the sensor. 
 
-For example, the output pin might be 3.3V when button is pressed, and 0V when the button is not pressed. 
-So we "read" sensors by reading the voltage of the sensor pin.
+For example, the output pin might be 1024 when an infrared sensor sees infrared, 0 when the sensor does not, and 567 when the sensor sees a little bit of infrared. 
 
-The command to do this in C++ is
+So we "read" sensors by calling the corresponding function.
+
+Lets say we want to read how much the front ball sensor sees the ball.
+
+Since the ball emits infrared, we have infrared sensors all round the robot. The one in front is the 1st one so to read it we can say:
+
+
 ```C++
-analogRead(pin_number);
+readBall(1);
+```
+This calls the function readBall() and lets it know you want to read the 1st sensor (the one pointing forwards). The robot then reads the 1st ball sensor and gets an integer (the sensor reading).
+
+For example, if readBall(1) returned 100, then we can imagine the program replacing th readBall command with the number 100.
+
+so code like this
+```C++
+Serial.println("value of ball sensor 1: " + String(readBall(1)));
+```
+turns into code like this
+```C++
+Serial.println("value of ball sensor 1: " + String(100));
 ```
 
-To read pin A5 for example, we would write
+And the program goes on. 
+
+
+There are 8 ball sensors on the kit so we can pass in the numbers 1 - 8 to read each of the sensors:
+
 ```C++
-analogRead(A5);
+readBall(1); //reads first infrared sensor
+readBall(2); //reads second infrared sensor
+readBall(3); //reads third infrared sensor
+readBall(4); //reads fourth infrared sensor
+readBall(5); //reads fifth infrared sensor
+readBall(6); //reads sixth infrared sensor
+readBall(7); //reads seventh infrared sensor
+readBall(8); //reads eighth infrared sensor
 ```
 
-Just reading the pin doesnt do much, so we can store the value in a variable like this:
-```C++
-int sensorData = analogRead(A5);
-```
-Now we can do calcualtions with sensorData as you learned in the previous C++ section.
+To print what we read to the computer, we can do:
 
-to print the data to the computer, we write
 ```C++
-Serial.println(String(sensorData));
+Serial.println("value of ball sensor 1: " + String(readBall(1)));
 ```
 
-Try uploading and monitoring the program you pasted in above. You should get readings for the sensors on the Zircon. 
+Which is most of what the code you copy-pasted above does.
 
-Try turning the ball on and moving it close to the robot to see how the values change.
+we can also achieve the same result by storing the value in a variable because the value is an int:
 
-Also try pushing the buttons to see how the data from the button changes from a 0 to a 1 when pressed.
+```C++
+int x = readBall(1); //stores what we measured into x
+```
+
+Printing x would print the value that we saved:
+
+```C++
+int x = readBall(1); //stores what we measured into x
+
+Serial.println("value of ball sensor 1: " + String(x));
+```
+
+
+
+Now we can do calculations with real time data from sensors with the skills you learned in the previous C++ section!
+
+For example we can write if statements with sensor readings like this:
+
+```C++
+if (readBall(1) > 500) {
+  Serial.println("I see the ball");
+} else {
+  Serial.println("I dont see the ball");
+}
+```
+
+or like this (same thing) using a variable x:
+
+```C++
+int x = readBall(1);
+if (x > 500) {
+  Serial.println("I see the ball");
+} else {
+  Serial.println("I dont see the ball");
+}
+```
+
+
 
 ## Problem
 
-This is an example that reads the value of sensor on pin 9 (a push button) and prints it in the serial monitor on your computer every second.
+Change the code you pasted above to only print the reading of pushbutton 2.
 
-(you can ignore things outside void loop())
+i.e print
 
-```C++
-#include <Arduino.h>
+push button 2: (reading of button 2)
 
-void motor1(int power, boolean direction) {
-  digitalWrite(2, direction);//DIR 1
-  digitalWrite(5, !direction);//DIR 2
-  analogWrite(3, power);//POWER
-}
+to your computer where (reading of button 2) is replaced with realtime readings of button 2. Check by pressing button 2 to see if the value changes.
 
-void motor2(int power, boolean direction) {
-  digitalWrite(8, direction);
-  digitalWrite(7, !direction);
-  analogWrite(6, power);
-}
-
-void motor3(int power, boolean direction) {
-  digitalWrite(12, direction);
-  digitalWrite(11, !direction);
-  analogWrite(4, power);
-}
-
-void initializePins() {
-  //initialize motor pins
-  pinMode(2, OUTPUT);
-  pinMode(3, OUTPUT);
-  pinMode(4, OUTPUT);
-  pinMode(5, OUTPUT);
-  pinMode(6, OUTPUT);
-  pinMode(7, OUTPUT);
-  pinMode(8, OUTPUT);
-  pinMode(11, OUTPUT);
-  pinMode(12, OUTPUT);
-
-  //initialize ball sensor pins and line sensor pins
-  pinMode(14, INPUT);
-  pinMode(15, INPUT);
-  pinMode(16, INPUT);
-  pinMode(17, INPUT);
-  pinMode(20, INPUT);
-  pinMode(21, INPUT);
-  pinMode(22, INPUT);
-  pinMode(23, INPUT);
-  pinMode(9, INPUT);
-  pinMode(10, INPUT);
-}
+Hint:
+Make sure you are pressing button 2 not button 1. 
 
 
-void setup(void)
-{
-  Serial.begin(115200); // WE NEED THIS TO PRINT THINGS TO THE COMPUTER
-  initializePins();
-
-  //PUT YOUR SETUP CODE HERE!
+Hint:
+Make sure you are reading from button 2 not button 1.
 
 
-}
-
-void loop() {
-
-    int sensorData = analogRead(9);
-
-    Serial.println(String(sensorData));    
-    
-    delay(1000);
-}
-```
-
-Copy-paste and upload this to see if it works. Make sure you click the monitor button after you upload to see the serial monitor.
-
-Pushing the button labeled pin 9 should change the number being printed.
-
-Modify the program to print out the sensor data of the right pushbutton (connected to pin 10 instead of 9).
-
-You should see the numbers react in real time when you press the button.
+Hint:
+Make sure you surround your sensor reading function with String() to convert the int value returned to a String. (wierd things happen if you try combining numbers and Strings in C++ if you dont convert numbers to Strings first)
 
 ## Solution
 
@@ -240,69 +250,37 @@ You should see the numbers react in real time when you press the button.
 
 ```C++
 #include <Arduino.h>
-
-void motor1(int power, boolean direction) {
-  digitalWrite(2, direction);//DIR 1
-  digitalWrite(5, !direction);//DIR 2
-  analogWrite(3, power);//POWER
-}
-
-void motor2(int power, boolean direction) {
-  digitalWrite(8, direction);
-  digitalWrite(7, !direction);
-  analogWrite(6, power);
-}
-
-void motor3(int power, boolean direction) {
-  digitalWrite(12, direction);
-  digitalWrite(11, !direction);
-  analogWrite(4, power);
-}
-
-void initializePins() {
-  //initialize motor pins
-  pinMode(2, OUTPUT);
-  pinMode(3, OUTPUT);
-  pinMode(4, OUTPUT);
-  pinMode(5, OUTPUT);
-  pinMode(6, OUTPUT);
-  pinMode(7, OUTPUT);
-  pinMode(8, OUTPUT);
-  pinMode(11, OUTPUT);
-  pinMode(12, OUTPUT);
-
-  //initialize ball sensor pins and line sensor pins
-  pinMode(14, INPUT);
-  pinMode(15, INPUT);
-  pinMode(16, INPUT);
-  pinMode(17, INPUT);
-  pinMode(20, INPUT);
-  pinMode(21, INPUT);
-  pinMode(22, INPUT);
-  pinMode(23, INPUT);
-  pinMode(9, INPUT);
-  pinMode(10, INPUT);
-}
+#include <zirconLib.h>
 
 
 void setup(void)
 {
-  Serial.begin(115200); // WE NEED THIS TO PRINT THINGS TO THE COMPUTER
-  initializePins();
-
-  //PUT YOUR SETUP CODE HERE!
-
+  Serial.begin(9600);
+  InitializeZircon();
 
 }
 
-void loop() {
 
-    int sensorData = analogRead(10);// THIS IS THE ONLY LINE THAT CHANGED
+void loop(void)
+{
 
-    Serial.println(String(sensorData));    
-    
-    delay(1000);
+  // Serial.println("reading sensors ");
+  // Serial.println("ball sensor 1: " + String(readBall(1)));
+  // Serial.println("ball sensor 2: " + String(readBall(2)));
+  // Serial.println("ball sensor 3: " + String(readBall(3)));
+  // Serial.println("ball sensor 4: " + String(readBall(4)));
+  // Serial.println("ball sensor 5: " + String(readBall(5)));
+  // Serial.println("ball sensor 6: " + String(readBall(6)));
+  // Serial.println("ball sensor 7: " + String(readBall(7)));
+  // Serial.println("ball sensor 8: " + String(readBall(8)));
+  // Serial.println("push button 1: " + String(readButton(1)));
+  Serial.println("push button 2: " + String(readButton(2)));
+  // Serial.println("orientation: " + String(readCompass()));
+  // Serial.println("current runtime: " + String(millis()) + " milliseconds");
+  // Serial.println("--------------------------------------");
+
 }
+
 ```
 
 {{< /collapse >}}

@@ -36,14 +36,15 @@ cover:
 #     appendFilePath: true # to append file path to Edit link
 ---
 
+We will now learn to program in C++!
 
 ## How will this work?
 
-Each topic will have a video, problem, and solution
+Each topic will have a video, problem, and solution. 
 
-Watch the video, then try to solve the problem on your own before looking at the answer
+Watch the video first, then try to solve the problem on your own before looking at the answer.
 
-each problem builds on the previous, so not understanding one will make the next harder
+Each problem builds on the previous, so not understanding one will make the next harder.
 
 There are MULTIPLE ways to solve the problem. Dont worry if your solution doesnt look exactly like the answer!
 
@@ -53,3 +54,5 @@ It is normal to not get it on the first try, keep at it!
 
 ask others for help and help others!
 
+
+Press next to go on
