@@ -44,6 +44,8 @@ Your Zircon should look like this
 
 Watch the video to get started on the first step: downloading a code editor.
 
+
+
 ## Materials used
 
 1. Finished Zircon x1
@@ -52,12 +54,12 @@ Watch the video to get started on the first step: downloading a code editor.
 
 ## VS Code and platformio
 
-{{< youtube id="fmzpQqomJx0" >}}
-
-
-
+{{< youtube id="xylDcAshLSQ" >}}
 
 [Download VS Code](https://code.visualstudio.com/download)
+
+
+{{< youtube id="7tNuw-rc-f8" >}}
 
 
 
