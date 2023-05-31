@@ -68,22 +68,53 @@ cover:
 4. PLIERS
 5. WIRE CUTTERS
 
+## Lets make the battery!
+
+First find the battery case:
+
+(battery case img)
+
+Find the female T-Connector. 
+
+(female t connector img)
+
+Find the male T-Connector. 
+
+(male t connector img)
+
+Now we need to connect the two. To do that we will use soldering.
 
 
 ## What is Soldering?
 
+(video of what soldering is and how to solder https://www.youtube.com/watch?v=AqvHogekDI4&t=120s)
 
-Soldering is used to make an electrical connection between two parts. It involves melting the solder with the soldering iron (at 250° - 350°C) and touching the molten solder onto where the connection is needed.
+Soldering is used to make an electrical connection between two parts. It involves melting the solder with the soldering iron and touching the molten solder onto where the connection is needed.
 
 If you want extra practice before getting started on the kit, you can use something like https://www.sparkfun.com/products/14635.
 
-https://www.youtube.com/watch?v=AqvHogekDI4&t=120s
 
 ## Soldering practice
 
-To practice soldering, put some solder on the two big square pads on the Zircon as shown below.
+Plug your connectors together as follows:
 
-Tip: Don't hold the soldering iron to any part for a long period of time, because that could damage the part. If you find yourself heating up a region for more than 30 seconds, you should let the board cool for 20 seconds before you try again.
+(image)
+
+Hold your battery case and connector in place with tape as follows (you can hold the parts with your hand but someparts will get very hot so be careful!).
+
+Make sure you are soldering the female connector!
+
+
+(picture of case and connector in place with tape)
+
+VIDEO:
+Then plug in your iron to heat it. After 2 minutes it should be hot, test by melting solder.
+
+place soldering iron on part to heat the connector for 1 second.
+
+Then touch solder to the pad.
+
+If you mess up or take longer than 10 seconds, let the parts cool for 20 seconds before trying again
 
 (video)
 

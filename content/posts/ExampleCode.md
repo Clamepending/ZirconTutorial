@@ -101,3 +101,48 @@ lib_deps = clamepending/ZirconLib@^1.0.17
 
 
 ```
+
+
+
+This is the program for a basic soccer robot:
+
+```C++
+#include <Arduino.h>
+#include <zirconLib.h>
+
+int goalAngle = 0;
+
+void setup(void)
+{
+  Serial.begin(115200);
+  InitializeZircon();
+  while (readButton(1) == 0) {
+    goalAngle = readCompass();
+  }
+}
+
+
+void loop(void)
+{
+
+  if (readBall(1) > 650) {
+
+    if (abs(goalAngle - readCompass()) < 30) {
+      motor1(100, 0);
+      motor2(100, 1);
+      motor3(0, 0);
+    } else {
+      motor1(70, 0);
+      motor2(10, 1);
+      motor3(70, 1);
+    }
+    
+  } else {
+    motor1(40, 1);
+    motor2(40, 1);
+    motor3(40, 1);
+  }
+
+
+}
+```

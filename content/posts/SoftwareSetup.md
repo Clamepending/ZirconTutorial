@@ -45,7 +45,7 @@ Your Zircon should look like this
 Watch the video to get started on the first step: downloading a code editor.
 
 
-
+    
 ## Materials used
 
 1. Finished Zircon x1
@@ -61,5 +61,10 @@ Watch the video to get started on the first step: downloading a code editor.
 
 {{< youtube id="7tNuw-rc-f8" >}}
 
+{{< youtube id="HrnbmBG9HAQ" >}}
+
+```C++
+lib_deps = clamepending/ZirconLib
+```
 
 
