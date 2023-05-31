@@ -1,7 +1,7 @@
 ---
-title: "Operations and Data Types"
+title: "STEP 113"
 date: 2020-09-15T11:30:03+00:00
-weight: 14
+weight: 113
 # aliases: ["/first"]
 tags: ["software"]
 author: "Mark Ogata"
@@ -11,7 +11,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "Step 13"
+description: "Serial, Printing, Delay Problems 1"
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: true
@@ -36,36 +36,39 @@ cover:
 #     appendFilePath: true # to append file path to Edit link
 ---
 
-{{< youtube id="cfNkhwL1bmw" >}}
+## void setup(void)
+
+The code inside setup(void) runs once at the start
+
+The commands inside 
+```C++
+void setup(void)
+{
+
+}
+```
+run once when the robot powers on. It is used to start or initialize sensors. Put code here if you want to do something at the very start of the program.
+
+## void loop(void)
+
+The commands inside 
+```C++
+void loop(void)
+{
+
+}
+```
+run forever over and over again after setup(void). This is the main part of the program. Put code here if you want to do something over and over again (most code goes here) such as always looking for a ball.
 
 ## Problem
 
-Compute (1 + 1), then print out "the answer is: (your computed answer)" from the teensy every second
-
-So if the answer is 21, you should print "the answer is: 21" to the computer every second
-
-![2](/img/2.png)
+print 3 to the serial port every 1 second forever (until you press Ctrl + C to quit monitor)
 
 HINT:
+the String representation of 3 is "3"
 
-to combine a String and an Integer, we first need to convert the Integer to a String.
+![motor labels](/img/3.png)
 
-Use String() to do that:
-```C++
-String(3) returns "3"
-
-"hello " + String(3) returns "hello 3"
-
-Serial.println("hello " + String(5 + 4)); prints "hello 9" to the computer
-
-```
-
-```C++
-int a = 0;
-a = 6 + 9
-Serial.println("hello " + String(a));
-```
-prints "hello 15" to the computer
 
 ## Solution
 
@@ -73,27 +76,23 @@ prints "hello 15" to the computer
 
 ```C++
 #include <Arduino.h>
-
+ 
 void setup() {
-
+    // put your setup code here, to run once:
+ 
     Serial.begin(9600);
-
+ 
 }   
-
+ 
 void loop() {
-
-    // we use a double because it can handle 
-    //very big numbers, floats, and very small numbers.
-    int answer = 1 + 1; 
-    
-    //we use String() to convert answer from a double 
-    //to a float to combine it with a string to print it out
-    Serial.println("the answer is: " + String(answer));
-    
+    // put your main code here, to run repeatedly
+    Serial.println("3");
     
     delay(1000);
 }
 ```
 
 {{< /collapse >}}
+
+
 

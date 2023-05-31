@@ -1,7 +1,7 @@
 ---
-title: "C++ Tutorial"
+title: "STEP 111"
 date: 2020-09-15T11:30:03+00:00
-weight: 12
+weight: 111
 # aliases: ["/first"]
 tags: ["software"]
 author: "Mark Ogata"
@@ -11,7 +11,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "Step 11"
+description: "C++ Tutorial"
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: true

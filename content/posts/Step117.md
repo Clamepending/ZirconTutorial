@@ -1,7 +1,7 @@
 ---
-title: "Operations and Data Types"
+title: "STEP 117"
 date: 2020-09-15T11:30:03+00:00
-weight: 14
+weight: 117
 # aliases: ["/first"]
 tags: ["software"]
 author: "Mark Ogata"
@@ -11,7 +11,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "Step 13"
+description: "Operations and Data Types"
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: true
@@ -38,7 +38,7 @@ cover:
 
 ## Problem
 
-Compute (25 % 10), then print out "the answer is: (your computed answer)" from the teensy every second
+Compute (1234 * (567 % 8) * 9 - 10 + 11*12), then print out "the answer is: (your computed answer)" from the teensy every second
 
 So if the answer is 21, you should print "the answer is: 21" to the computer every second
 
@@ -66,8 +66,8 @@ prints "hello 15" to the computer
 ## Solution
 
 {{< collapse summary="show solution" >}}
-the answer is: 5
-![5](/img/5.png)
+the answer is: 77864
+![77864](/img/77864.png)
 
 ```C++
 #include <Arduino.h>
@@ -82,7 +82,7 @@ void loop() {
 
     // we use a double because it can handle 
     //very big numbers, floats, and very small numbers.
-    int answer = 25 % 10;
+    int answer = 1234 * (567 % 8) * 9 - 10 + 11*12; 
     
     //we use String() to convert answer from a double 
     //to a float to combine it with a string to print it out

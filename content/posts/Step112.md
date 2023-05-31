@@ -1,7 +1,7 @@
 ---
-title: "Serial, Printing, Delay Problems 2"
+title: "STEP 112"
 date: 2020-09-15T11:30:03+00:00
-weight: 13.2
+weight: 112
 # aliases: ["/first"]
 tags: ["software"]
 author: "Mark Ogata"
@@ -11,7 +11,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "Step 9.2"
+description: "Serial, Printing, Delay"
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: true
@@ -35,6 +35,11 @@ cover:
 #     Text: "Suggest Changes" # edit text
 #     appendFilePath: true # to append file path to Edit link
 ---
+
+{{< youtube id="xTUMSJTGjw0" >}}
+
+
+
 
 ## void setup(void)
 
@@ -62,21 +67,10 @@ run forever over and over again after setup(void). This is the main part of the 
 
 ## Problem
 
-Print "duck" to the serial port, then wait 1 second.
+print "YO" to the serial port every 0.5 seconds (500 milliseconds) forever (until you press Ctrl + C to quit monitor)
 
-Then print "duck" to the serial port, then wait 1 second. 
+![YO](/img/yo.png)
 
-Then print "goose" to the serial port, then wait 2 seconds.
-
-repeat forever (until you press Ctrl + C to quit monitor)
-
-![duck duck goose](/img/duckduckgoose.png)
-
-HINT:
-the command to wait 1 second is
-```C++
-delay(1000);
-```
 
 ## Solution
 
@@ -90,16 +84,14 @@ void setup() {
  
     Serial.begin(9600);
  
-}   
+} 
  
 void loop() {
     // put your main code here, to run repeatedly
-    Serial.println("duck");
-    delay(1000);
-    Serial.println("duck");
-    delay(1000);
-    Serial.println("goose");
-    delay(2000);
+ 
+    Serial.println("YO");
+    
+    delay(500);
 }
 ```
 
