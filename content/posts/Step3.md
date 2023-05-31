@@ -1,5 +1,5 @@
 ---
-title: "The Teensy"
+title: "STEP 3"
 date: 2020-09-15T11:30:03+00:00
 weight: 3
 # aliases: ["/first"]
@@ -11,7 +11,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "Step 2"
+description: "The Teensy"
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: true

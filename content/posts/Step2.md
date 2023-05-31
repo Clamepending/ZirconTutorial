@@ -1,5 +1,5 @@
 ---
-title: "The Battery"
+title: "STEP 2"
 date: 2020-09-15T11:30:03+00:00
 weight: 2
 # aliases: ["/first"]
@@ -11,7 +11,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "Step 1"
+description: "The Battery"
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: true

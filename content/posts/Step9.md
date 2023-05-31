@@ -1,5 +1,5 @@
 ---
-title: "Hardware Check"
+title: "STEP 9"
 date: 2020-09-15T11:30:03+00:00
 weight: 9
 # aliases: ["/first"]
@@ -11,7 +11,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "Step 9"
+description: "Hardware Check"
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: true

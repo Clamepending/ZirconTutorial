@@ -1,7 +1,7 @@
 ---
-title: "The Motors"
+title: "STEP 100"
 date: 2020-09-15T11:30:03+00:00
-weight: 5
+weight: 100
 # aliases: ["/first"]
 tags: ["hardware"]
 author: "Mark Ogata"
@@ -11,7 +11,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "Step 5"
+description: "Print if ball"
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: true
