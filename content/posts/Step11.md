@@ -37,8 +37,9 @@ cover:
 ---
 
 Lets move a motor!
-    
-{{< youtube id="xylDcAshLSQ" >}}
+
+
+{{< youtube id="cWxSHGtisMc" >}}
 
 ```C++
 #include <Arduino.h>
@@ -47,7 +48,7 @@ Lets move a motor!
 
 void setup(void)
 {
-  Serial.begin(115200);
+
   InitializeZircon();
 
 }
@@ -59,10 +60,12 @@ void loop(void)
 }
 ```
 
+## IF YOUR CODE DOES NOT WORK
 
-{{< youtube id="7tNuw-rc-f8" >}}
-
-{{< youtube id="HrnbmBG9HAQ" >}}
+- seeing if ; is at the end of every command like above
+- seeing if the spacing is exactly as above (no space between motor1 and (100, 0) )
+- look at the previous video to see if your platformio.ini file is set up correctly (we added lib_deps)
+- feel free to ask if you are stuck in our discord server!
 
 
 
