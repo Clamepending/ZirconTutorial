@@ -38,49 +38,35 @@ cover:
 
 
 
-![Parts List](/img/PartsList.jpg)
-
 ## Materials used
 
-1. MAIN PCB X1
-2. FEMALE HEADER PINS X2   
-3. SWITCH X1
-4. MALE T CONNECTOR X1
-5. FEMALE T CONNECTOR X1
-6. AA BATTERY HOLDERX1
-7. TEENSY LC X1
-8. MALE HEADER PINS X2
-9. MOTORS X3
-10. MOTOR MOUNT X3
-11. OMNIWHEELS X3
-12. WIRE X3
-13. 4 PIN SOCKET (I2C) X1
-14. LINE SENSORS X3
-15. M3 BOLTS X36
-16. M3 NUTS X12
-17. M3 STANDOFFS X12
+| No. | Part Name                  | Image                                |
+|-----|--------------------------|-------------------------------------|
+| 1.  | FEMALE T CONNECTOR X1    | ![female T connector](/img/tconnectorfemale.jpg)  |
+| 2.  | AA BATTERY HOLDERX1      | ![battery case](/img/batterycase.jpg) |
+
 
 ## Tools needed
 
-1. SOLDERING IRON
-2. SOLDER
-3. BIG AND SMALL PHILLIPS HEAD SCREW DRIVER
-4. PLIERS
-5. WIRE CUTTERS
+| No. | Part Name                  | Image                                |
+|-----|--------------------------|-------------------------------------|
+| 1.  | SOLDERING IRON     | ![female T connector](/img/iron.jpg)  |
+| 2.  | SOLDER             | ![battery case](/img/solder.jpg) |
+
 
 ## Lets make the battery!
 
 First find the battery case:
 
-(battery case img)
+![battery case](/img/batterycase.jpg)
 
 Find the female T-Connector. 
 
-(female t connector img)
+![female T connector](/img/tconnectorfemale.jpg)
 
 Find the male T-Connector. 
 
-(male t connector img)
+![male T connector](/img/tconnector.jpg)
 
 Now we need to connect the two. To do that we will use soldering.
 
