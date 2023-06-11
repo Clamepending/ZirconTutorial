@@ -1,7 +1,7 @@
 ---
-title: "STEP 12"
+title: "STEP 13"
 date: 2020-09-15T11:30:03+00:00
-weight: 12
+weight: 13
 # aliases: ["/first"]
 tags: ["software"]
 author: "Mark Ogata"
@@ -11,7 +11,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "Go Forward"
+description: "Go Forward 1 second"
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: true
@@ -36,7 +36,7 @@ cover:
 #     appendFilePath: true # to append file path to Edit link
 ---
 
-Lets go forward!
+Lets go forward for 1 second every second.
 
 Make sure to put a roll of tape under the Zircon so the wheels are floating (we dont want the robot to run off the table when a motor moves)
 
