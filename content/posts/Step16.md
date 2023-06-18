@@ -35,9 +35,11 @@ cover:
 #     Text: "Suggest Changes" # edit text
 #     appendFilePath: true # to append file path to Edit link
 ---
+
 We will now use the white line sensors to go forward until we see a white line.
 
-{{< youtube id="La3AE8Unwd8" >}}
+{{< youtube id="em977XPnUE4" >}}
+
 
 
 

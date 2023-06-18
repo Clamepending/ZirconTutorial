@@ -11,7 +11,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "Print if line"
+description: "Line detector"
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: true
@@ -35,7 +35,8 @@ cover:
 #     Text: "Suggest Changes" # edit text
 #     appendFilePath: true # to append file path to Edit link
 ---
-We will now use the white line sensors to go forward until we see a white line.
+
+Lets make a line detector robot!
 
 {{< youtube id="MRVUxzB9apk" >}}
 
