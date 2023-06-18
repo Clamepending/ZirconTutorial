@@ -1,7 +1,7 @@
 ---
-title: "STEP 15"
+title: "STEP 16"
 date: 2020-09-15T11:30:03+00:00
-weight: 15
+weight: 16
 # aliases: ["/first"]
 tags: ["software"]
 author: "Mark Ogata"
@@ -11,7 +11,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "Print if line"
+description: "Stop if we see line"
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: true
@@ -37,7 +37,9 @@ cover:
 ---
 We will now use the white line sensors to go forward until we see a white line.
 
-{{< youtube id="MRVUxzB9apk" >}}
+{{< youtube id="La3AE8Unwd8" >}}
+
+
 
 
 
