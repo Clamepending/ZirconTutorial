@@ -48,7 +48,7 @@ contact mineko@robomov.net if any are missing.
 | 2.  | FEMALE HEADER PINS X2     | ![FEMALE HEADER PINS](/img/femaleHeaders.jpg) |
 | 3.  | SWITCH X1                 | ![SWITCH](/img/switch.jpg)          |
 | 4.  | MALE T CONNECTOR X1       | ![MALE T CONNECTOR](/img/tconnector.jpg) |
-| 5.  | FEMALE T CONNECTOR X1     | ![FEMALE T CONNECTOR](/img/femaleHeaders.jpg) |
+| 5.  | FEMALE T CONNECTOR X1     | ![FEMALE T CONNECTOR](/img/tconnectorfemale.jpg) |
 | 6.  | AA BATTERY HOLDER X1      | ![AA BATTERY HOLDER](/img/batterycase.jpg) |
 | 7.  | TEENSY LC X1              | ![TEENSY LC](/img/teensy.jpg)    |
 | 8.  | MALE HEADER PINS X2       | ![MALE HEADER PINS](/img/malepins.jpg) |
