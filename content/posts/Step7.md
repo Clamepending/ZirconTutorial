@@ -42,16 +42,20 @@ cover:
 
 ## Materials used
 
-1. Motor and omniwheel from part 5 x3
-2. M3 bolts x12
-3. M3 nuts x12
+| No. | Part Name                      | Image                                            |
+|-----|--------------------------------|--------------------------------------------------|
+| 1.  | Motor and Omniwheel from Part 5 x3 | ![Motor and Omniwheel](/img/motor_omniwheel.jpg) |
+| 2.  | M3 Bolts x12                   | ![M3 Bolts](/img/m3bolts.jpg)                     |
+| 3.  | M3 Nuts x12                    | ![M3 Nuts](/img/m3nuts.jpg)                       |
 
 ## Tools needed
 
-1. Solder
-2. Soldering iron
-3. Phillips head screwdriver
-4. Pliers (optional)
+| No. | Tool Name                       | Image                                               |
+|-----|---------------------------------|-----------------------------------------------------|
+| 1.  | Solder                          | ![Solder](/img/solder.jpg)                           |
+| 2.  | Soldering Iron                  | ![Soldering Iron](/img/solderingiron.jpg)            |
+| 3.  | Phillips Head Screwdriver        | ![Phillips Head Screwdriver](/img/screwdriver.jpg)    |
+| 4.  | Pliers (Optional)               | ![Pliers](/img/pliers.jpg)                           |
 
 
 ![Motor Materials](/img/cuttingbottom.PNG)

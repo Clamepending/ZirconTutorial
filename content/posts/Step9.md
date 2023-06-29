@@ -42,15 +42,19 @@ cover:
 
 ## Materials used
 
-1. Zircon x1
-2. Teensy from Part 2 x1
-3. Battery from Part 1 x1
-4. AA battery x4 (not included)
-5. Compass x1
+| No. | Part Name                 | Image                                       |
+|-----|---------------------------|---------------------------------------------|
+| 1.  | Zircon x1                 | ![Zircon](/img/zircon.jpg)                   |
+| 2.  | Teensy from Part 2 x1     | ![Teensy](/img/teensy.jpg)                   |
+| 3.  | Battery from Part 1 x1    | ![Battery](/img/battery.jpg)                 |
+| 4.  | AA Battery x4 (not included) | ![AA Battery](/img/aabattery.jpg)           |
+| 5.  | Compass x1                | ![Compass](/img/compass.jpg)                 |
 
 ## Tools needed
 
-1. voltmeter
+| No. | Tool Name                | Image                                       |
+|-----|--------------------------|---------------------------------------------|
+| 1.  | Voltmeter                | ![Voltmeter](/img/voltmeter.jpg)             |
 
 ![Motor Materials](/img/HardwareCheckParts.jpg)
 

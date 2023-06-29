@@ -42,13 +42,17 @@ cover:
 
 ## Materials used
 
-1. The motors from Part 4 x3
-2. Omni Wheel set x3
+| No. | Part Name                 | Image                                       |
+|-----|---------------------------|---------------------------------------------|
+| 1.  | The Motors from Part 4 x3 | ![Motors](/img/motors.jpg)                   |
+| 2.  | Omni Wheel Set x3         | ![Omni Wheel Set](/img/omniwheel.jpg)        |
 
 ## Tools needed
 
-1. Phillips head screw driver
-2. Pliers
+| No. | Tool Name                | Image                                       |
+|-----|--------------------------|---------------------------------------------|
+| 1.  | Phillips Head Screwdriver | ![Phillips Head Screwdriver](/img/screwdriver.jpg) |
+| 2.  | Pliers                   | ![Pliers](/img/pliers.jpg)                   |
 
 
 ![Motor Materials](/img/omniwheelparts.jpg)

@@ -11,7 +11,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "The Teensy"
+description: "The Battery"
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: true
@@ -38,69 +38,40 @@ cover:
 
 
 
-![Finished Teensy](/img/steps/teensycroped.jpg)
-
 ## Materials used
 
-1. Teensy LC x1
-2. Male header pins x2
+| No. | Part Name                  | Image                                |
+|-----|--------------------------|-------------------------------------|
+| 1.  | MALE T CONNECTOR X1    | ![male T connector](/img/tconnector.jpg)  |
+| 2.  | Zircon PCB x1           | ![Zircon PCB](/img/zirconpcb.jpg)           |
+
 
 ## Tools needed
 
-1. Solder
-2. Soldering iron
+| No. | Part Name                  | Image                                |
+|-----|--------------------------|-------------------------------------|
+| 1.  | SOLDERING IRON     | ![female T connector](/img/iron.jpg)  |
+| 2.  | SOLDER             | ![battery case](/img/solder.jpg) |
 
 
-![Teensy Materials](/img/teensyMaterials.jpg)
+## Battery port
 
+We will now install the battery port on the robot.
 
-# Header Pins
+Find the red male T-connector
 
-It is important to solder the header pins straight, and not have them slanted
+(image)
 
-To break header pins into the right length, use your fingernails or a wire cutter on the indent between the pins where you want to make a cut.
+Put it in the slot on the Zircon PCB (main board). Make sure your board is right side up as in the picture.
 
-With fingernail: Apply pressure as close you can to the fingernail to bend the header pin to minimise the chance of the header pin breaking at some other point.
+(image before)
 
-With wire cutter: align the mouth of the wire cutter with the indent where you want to cut the header pin and squeeze.
+(image after)
 
-{{< youtube id="y7TUmR5pU8Q" >}}
+Turn the board over and solder the connector to the board.
 
+(video)
 
-## Please cut the following length header pins:
+Afterwards your board should look like this.
 
-1. 14 pin long header pin x2
-2. 3 pin long header pin x1
-3. 1 pin long header pin x1
-
-![Header pins](/img/teensyHeaders.PNG)
-
-Take a 14 pin header pin and put it in one side of the teensy, making sure all 14 pins go into a hole
-
-![Parts List](/img/14pinOnSideTeensy.PNG)
-
-## Solder ONLY ONE pin first.
-
-Inspect the header pin to see if it is slanted or has a gap like the one below. To fix any issues, (like a slanted header pin in the picture), melt the soldered pin and adjust the header pin, then remove the soldering iron to let the solder harden again. Make sure not to heat up the header pin too long or else it will start to melt. It is ok to take multiple tries and let the header pin cool down between attempts.
-
-
-![Parts List](/img/crookedteensy.PNG)
-
-The top side should look like this
-
-![Parts List](/img/soldered14pin.PNG)
-
-Repeat the process on the other side with 14 more pins
-
-![Parts List](/img/2x14pinsolderedteensy.PNG)
-
-Take the 3 pin header and put it into the inside 3 pins of the teensy. Solder 1 pin and make sure the header pin is straight without any gaps. Correct as needed like above, and solder the rest of the pins once done.
-
-![3 and 1 pin](/img/steps/3pin.jpg)
-
-
-The result should look like this:
-
-
-![Parts List](/img/steps/teensycroped.jpg)
-![Parts List](/img/steps/allsolderedteensy.jpg)
+(image)

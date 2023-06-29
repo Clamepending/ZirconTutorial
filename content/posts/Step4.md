@@ -41,19 +41,22 @@ cover:
 ![Finished Teensy](/img/steps/MainBoardComplete.jpg)
 
 ## Materials used
-
-1. Male T connector x1
-2. Zircon PCB x1
-3. Female header pins x2
-4. Switch x1
-5. 4 pin JST port (inside the compass bag) x1
-6. Ball sensors x8
+| No. | Part Name               | Image                                      |
+|-----|-------------------------|--------------------------------------------|
+| 1.  | Male T Connector x1     | ![Male T Connector](/img/tconnector.jpg)    |
+| 2.  | Zircon PCB x1           | ![Zircon PCB](/img/zirconpcb.jpg)           |
+| 3.  | Female Header Pins x2   | ![Female Header Pins](/img/headerpins.jpg)  |
+| 4.  | Switch x1               | ![Switch](/img/switch.jpg)                  |
+| 5.  | 4 Pin JST Port x1       | ![4 Pin JST Port](/img/jstport.jpg)         |
+| 6.  | Ball Sensors x8         | ![Ball Sensors](/img/ballsensors.jpg)       |
 
 ## Tools needed
 
-1. Solder
-2. Soldering iron
-3. Wire cutters
+| No. | Part Name                  | Image                                |
+|-----|--------------------------|-------------------------------------|
+| 1.  | SOLDERING IRON     | ![female T connector](/img/iron.jpg)  |
+| 2.  | SOLDER             | ![battery case](/img/solder.jpg) |
+| 3.  | WIRE CUTTERS             | ![wire cutters](/img/solder.jpg) |
 
 
 ![Mainboard Materials](/img/MainBoardParts.jpg)

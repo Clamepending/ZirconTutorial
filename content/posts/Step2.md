@@ -107,26 +107,3 @@ If you mess up or take longer than 10 seconds, let the parts cool for 20 seconds
 (picture)
 
 (picture after)
-
-
-## Battery port
-
-We will now install the battery port.
-
-Find the red T-connector
-
-(image)
-
-Put it in the slot on the main board. Make sure your board is right side up as in the picture.
-
-(image before)
-
-(image after)
-
-Turn the board over and solder the connector to the board.
-
-(video)
-
-Afterwards your board should look like this.
-
-(image)

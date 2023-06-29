@@ -42,13 +42,17 @@ cover:
 
 ## Materials used
 
-1. M3 Metal female female standoffs x12
-2. M3 bolts x24
-3. Line sensor x3
+| No. | Part Name                             | Image                                                     |
+|-----|---------------------------------------|-----------------------------------------------------------|
+| 1.  | M3 Metal Female-Female Standoffs x12  | ![M3 Metal Female-Female Standoffs](/img/standoffs.jpg)     |
+| 2.  | M3 Bolts x24                          | ![M3 Bolts](/img/m3bolts.jpg)                              |
+| 3.  | Line Sensor x3                        | ![Line Sensor](/img/linesensor.jpg)                         |
 
 ## Tools needed
 
-1. Screw driver
+| No. | Tool Name                        | Image                                                   |
+|-----|----------------------------------|---------------------------------------------------------|
+| 1.  | Screwdriver                      | ![Screwdriver](/img/screwdriver.jpg)                     |
 
 ![Motor Materials](/img/linesensorparts.jpg)
 

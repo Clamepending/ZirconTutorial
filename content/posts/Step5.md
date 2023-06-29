@@ -42,15 +42,19 @@ cover:
 
 ## Materials used
 
-1. 15:1 gear motor set x3
-2. Wire x6
+| No. | Part Name                | Image                                       |
+|-----|--------------------------|---------------------------------------------|
+| 1.  | 15:1 Gear Motor Set x3   | ![15:1 Gear Motor Set](/img/gearmotor.jpg)   |
+| 2.  | Wire x6                  | ![Wire](/img/wire.jpg)                       |
 
 ## Tools needed
 
-1. Solder
-2. Soldering iron
-3. Phillips head screw driver
-4. Pliers
+| No. | Tool Name               | Image                                       |
+|-----|--------------------------|---------------------------------------------|
+| 1.  | Solder                   | ![Solder](/img/solder.jpg)                   |
+| 2.  | Soldering Iron           | ![Soldering Iron](/img/solderingiron.jpg)    |
+| 3.  | Phillips Head Screwdriver | ![Phillips Head Screwdriver](/img/screwdriver.jpg) |
+| 4.  | Pliers                   | ![Pliers](/img/pliers.jpg)                   |
 
 
 ![Motor Materials](/img/motorparts.jpg)
