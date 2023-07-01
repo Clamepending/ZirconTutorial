@@ -43,12 +43,11 @@ cover:
 ## Materials used
 | No. | Part Name               | Image                                      |
 |-----|-------------------------|--------------------------------------------|
-| 1.  | Male T Connector x1     | ![Male T Connector](/img/tconnector.jpg)    |
-| 2.  | Zircon PCB x1           | ![Zircon PCB](/img/zirconpcb.jpg)           |
-| 3.  | Female Header Pins x2   | ![Female Header Pins](/img/headerpins.jpg)  |
-| 4.  | Switch x1               | ![Switch](/img/switch.jpg)                  |
-| 5.  | 4 Pin JST Port x1       | ![4 Pin JST Port](/img/jstport.jpg)         |
-| 6.  | Ball Sensors x8         | ![Ball Sensors](/img/ballsensors.jpg)       |
+| 1.  | Zircon PCB x1           | ![Zircon PCB](/img/mainboard.jpg)           |
+| 2.  | Female Header Pins x2   | ![Female Header Pins](/img/femaleHeaders.jpg)  |
+| 3.  | Switch x1               | ![Switch](/img/switch.jpg)                  |
+| 4.  | 4 Pin JST Port x1       | ![4 Pin JST Port](/img/4pins.jpg)         |
+| 5.  | Ball Sensors x8         | ![Ball Sensors](/img/ballsensors.jpg)       |
 
 ## Tools needed
 
@@ -57,21 +56,6 @@ cover:
 | 1.  | SOLDERING IRON     | ![female T connector](/img/iron.jpg)  |
 | 2.  | SOLDER             | ![battery case](/img/solder.jpg) |
 | 3.  | WIRE CUTTERS             | ![wire cutters](/img/solder.jpg) |
-
-
-![Mainboard Materials](/img/MainBoardParts.jpg)
-
-
-## T connector
-
-If you inserted the Male T connector into the female T connector when soldering the battery case, take the Male T connector out to use it in this step.
-
-Insert the male T connector into the T shaped hole in the Zircon PCB.
-
-Solder it in place. This will take more solder than usual because the pads are big.
-
-![Mainboard Materials](/img/Tconnectorplacement.PNG)
-
 
 
 ## Switch

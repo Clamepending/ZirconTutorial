@@ -43,7 +43,7 @@ cover:
 | No. | Part Name                  | Image                                |
 |-----|--------------------------|-------------------------------------|
 | 1.  | MALE T CONNECTOR X1    | ![male T connector](/img/tconnector.jpg)  |
-| 2.  | Zircon PCB x1           | ![Zircon PCB](/img/zirconpcb.jpg)           |
+| 2.  | Zircon PCB x1           | ![Zircon PCB](/img/mainboard.jpgs)           |
 
 
 ## Tools needed

@@ -1,7 +1,7 @@
 ---
-title: "STEP 19"
+title: "STEP 20"
 date: 2020-09-15T11:30:03+00:00
-weight: 19
+weight: 20
 # aliases: ["/first"]
 tags: ["software"]
 author: "Mark Ogata"
@@ -11,7 +11,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "The Compass Sensor"
+description: "Soccer Robot!"
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: true
@@ -36,21 +36,12 @@ cover:
 #     appendFilePath: true # to append file path to Edit link
 ---
 
-We will now use the compass sensor so we can score in the right goal!
+We will now combine everything we learned to make a basic soccer robot!
 
-First, watch the video to install the sensor on the robot.
+{{< youtube id="" >}}
 
-{{< youtube id="nBTJl8NxmD0" >}}
 
-Next, watch the video to learn about the calibration step that is needed when you plug in the compass sensor.
 
-You will learn that the calibration step always runs when the robot first turns on. After the calibration is done, your main program will execute.
-
-{{< youtube id="dvxvTkGpRM4" >}}
-
-Now we will make the robot always try to face a single direction using the compass sensor!
-
-{{< youtube id="wgeVtOuVwHY" >}}
 
 
 
