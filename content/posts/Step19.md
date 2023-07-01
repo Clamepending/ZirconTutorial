@@ -46,7 +46,7 @@ Next, watch the video to learn about the calibration step that is needed when yo
 
 You will learn that the calibration step always runs when the robot first turns on. After the calibration is done, your main program will execute.
 
-{{< youtube id="dvxvTkGpRM4" >}}
+{{< youtube id="yEa_q0muTuk" >}}
 
 Now we will make the robot always try to face a single direction using the compass sensor!
 
