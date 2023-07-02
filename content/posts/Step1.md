@@ -38,7 +38,10 @@ cover:
 
 
 Make sure you have all of the parts!
-contact mineko@robomov.net if any are missing.
+
+Join [the discord server](https://discord.gg/TEpPBN6myj) where you can get help if you get stuck :)
+
+contact mineko@robomov.net if any parts are missing.
 
 ## PARTS
 
@@ -68,8 +71,9 @@ contact mineko@robomov.net if any are missing.
 |-----|--------------------------|-------------------------------------|
 | 1.  | SOLDERING IRON             | ![M3 STANDOFFS](/img/iron.jpg) |
 | 2.  | SOLDER                     | ![M3 STANDOFFS](/img/solder.jpg) |
-| 3.  | BIG AND SMALL PHILLIPS HEAD SCREWDRIVER | ![M3 STANDOFFS](/img/phillips.jpg) |
+| 3.  | PHILLIPS HEAD SCREWDRIVER | ![M3 STANDOFFS](/img/phillips.jpg) |
 | 4.  | WIRE CUTTERS               | ![M3 STANDOFFS](/img/cutter.jpg) |
+| 4.  | Pliers                     | ![Pliers](/img/pliers.jpg)   
 
 
 # Click "Next" on the bottom right of this page to go to the next step!

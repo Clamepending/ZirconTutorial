@@ -45,17 +45,17 @@ cover:
 | No. | Part Name                      | Image                                            |
 |-----|--------------------------------|--------------------------------------------------|
 | 1.  | Motor and Omniwheel from Part 5 x3 | ![Motor and Omniwheel](/img/motor_omniwheel.jpg) |
-| 2.  | M3 Bolts x12                   | ![M3 Bolts](/img/m3bolts.jpg)                     |
-| 3.  | M3 Nuts x12                    | ![M3 Nuts](/img/m3nuts.jpg)                       |
+| 2.  | M3 Bolts x12                   | ![M3 Bolts](/img/screws.jpg)                     |
+| 3.  | M3 Nuts x12                    | ![M3 Nuts](/img/nuts.jpg)                       |
 
 ## Tools needed
 
 | No. | Tool Name                       | Image                                               |
 |-----|---------------------------------|-----------------------------------------------------|
 | 1.  | Solder                          | ![Solder](/img/solder.jpg)                           |
-| 2.  | Soldering Iron                  | ![Soldering Iron](/img/solderingiron.jpg)            |
+| 2.  | Soldering Iron                  | ![Soldering Iron](/img/iron.jpg)            |
 | 3.  | Phillips Head Screwdriver        | ![Phillips Head Screwdriver](/img/screwdriver.jpg)    |
-| 4.  | Pliers (Optional)               | ![Pliers](/img/pliers.jpg)                           |
+| 4.  | Pliers               | ![Pliers](/img/pliers.jpg)                           |
 
 
 ![Motor Materials](/img/cuttingbottom.PNG)
@@ -65,11 +65,17 @@ To mount the motors, we need as flat of a board as possible underneath where the
 
 Use a wire cutter to cut any pins sticking out from under the Zircon board. Be careful not to damage the silkscreen (the green or black part of the Zircon board).
 
+(short video showing cutting)
+
 ## Secure motors
 
-We will repeat the next steps 3 times for each motor. For this step, be sure not to overtighten the bolts and dig into the PCB. Tighten them comfortably but not too much. Get 4 m3 bolts (the larger ones) and m3 nuts. Secure the motor onto the Zircon board with the 4 bolts through the holes in the black casing.
+We will repeat the next steps 3 times for each motor. For this step, be sure not to overtighten the bolts and dig into the PCB. Tighten them comfortably but not too much. 
 
-![inserting pin](/img/steps/securingmotor.PNG)
+Get four m3 bolts and m3 nuts. Secure the motor onto the Zircon board with the 4 bolts through the holes in the black casing.
+
+![securing motor](/img/steps/securingmotor.PNG)
+
+(insert finished picture)
 
 ## Solder motor wires
 
@@ -79,8 +85,11 @@ Accidentally swapping pins from different motors is not fine, so if that happens
 
 Repeat these steps for the other 2 motors.
 
+(reshoot video with new version because pinout is different)
+
 {{< youtube id="RKKadLGrtvk" >}}
 
 The result should look like this
 
+(retake picture with new pinout)
 ![soldered motors](/img/motorwiressoldered.PNG)

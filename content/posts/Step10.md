@@ -42,15 +42,15 @@ Your Zircon should look like this
 
 ![Finished Motors](/img/mainPhoto.jpg)
 
+Disconnect the compass sensor. We will connect it back later when we need it. (Having it connected will make the robot go through a calibration step at the start, while not connecting it will bypass it)
+
 Watch the video to get started on the first step: downloading a code editor.
 
-
-    
 ## Materials used
 
 | No. | Part Name                    | Image                                            |
 |-----|------------------------------|--------------------------------------------------|
-| 1.  | Finished Zircon x1           | ![Finished Zircon](/img/finishedzircon.jpg)      |
+| 1.  | Finished Zircon x1           | ![Finished Zircon](/img/mainPhoto.jpg)      |
 | 2.  | USB to Micro USB Cable x1    | ![USB to Micro USB Cable](/img/usbcable.jpg)      |
 | 3.  | Computer x1                  | ![Computer](/img/computer.jpg)                    |
 

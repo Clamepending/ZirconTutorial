@@ -44,49 +44,46 @@ cover:
 
 | No. | Part Name                 | Image                                       |
 |-----|---------------------------|---------------------------------------------|
-| 1.  | Zircon x1                 | ![Zircon](/img/zircon.jpg)                   |
-| 2.  | Teensy from Part 2 x1     | ![Teensy](/img/teensy.jpg)                   |
+| 1.  | Zircon x1                 | ![Zircon](/img/mainPhoto.jpg)                   |
+| 2.  | Teensy x1     | ![Teensy](/img/teensy.jpg)                   |
 | 3.  | Battery from Part 1 x1    | ![Battery](/img/battery.jpg)                 |
 | 4.  | AA Battery x4 (not included) | ![AA Battery](/img/aabattery.jpg)           |
 | 5.  | Compass x1                | ![Compass](/img/compass.jpg)                 |
 
-## Tools needed
-
-| No. | Tool Name                | Image                                       |
-|-----|--------------------------|---------------------------------------------|
-| 1.  | Voltmeter                | ![Voltmeter](/img/voltmeter.jpg)             |
-
-![Motor Materials](/img/HardwareCheckParts.jpg)
 
 ## Insert teensy
 
 Be careful with this step. Make sure not to bend any pins and make sure all pins are going into the slots they are supposed to.
 
-Plug the teensy into the female header pins on the Zircon furthest to the right.
+THE DIRECTION DOES MATTER, so make sure you put it in the correct way.
+
+(retake picture with teensy 4.1)
 
 ![Motor Materials](/img/steps/putTeensyIn.jpg)
 
 ## Double Check
 
-The reason there are extra female header pins on the Zircon that are unused is because the Zircon is compatible with the teensy 3.5 and 3.6 as well, which are longer than the LC that is included in the kit.
+Double check if the teensy is put in the right way.
 
-Inserting the teensy into the wrong slot or pins not going where they are supposed to can damage the kit, so please double check if the teensy is inserted in the correct spot and all pins are inserted (including the inner 3).
-
-![inserting pin](/img/steps/SecondteensyInsertedpic.jpg)
+(picture)
 
 ## Battery Check
 
-Insert the AA batteries into the battery holder. Set your voltmeter to measure voltage (around 6 volts if there is a setting on your voltmeter) Make sure the black probe of the voltmeter is on the COM port of the voltmeter and the red probe is on VΩmA.
+Get your battery case.
 
-Place the black probe into the vertical and black part of the T connector of the battery case. Place the red probe into the horizontal and red part of the T connector of the battery case.
+![soldered motors](/img/emptyBatterycase.jpg)
 
-The voltmeter should read POSITIVE 6 volts. If it reads negative, please unsolder and swap the red and black wires of the battery case. As a doublecheck, swapping the voltmeter probes should show NEGATIVE 6 volts. As an additional reference, here is a lipo battery with a T connector. The colors of the battery wires (red and black) connected to the T connector should be exactly like your battery case.
+Insert the AA batteries into the battery holder. 
 
-![soldered motors](/img/steps/DoublecheckBattery.jpg)
+(image of loaded battery case)
 
 ## Magic smoke
 
-Now that you checked the battery is made correctly, plug it into the Zircon through the T connector. If the line sensors and teensy have not turned on (shown by an led),flip the big switch.
+Check if your battery case is soldered correctly (make sure you did not mix up the red and black wires!). 
+
+Plug it into the Zircon through the T connector. If the line sensors and teensy have not turned on (shown by an led), flip the big switch.
+
+The line snesors should light up.
 
 Take the compass sensor and connect it to the Zircon through its 4 pin cable. The compass should light up with a green LED. If the LEDs do not light up, unplug the battery and check if it is hot. Make sure you plugged in everything in the correct slot, line sensors are in the exact orientation they should be, and the 4 pin JST port is in the correct direction.
 

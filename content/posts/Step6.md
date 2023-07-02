@@ -44,21 +44,21 @@ cover:
 
 | No. | Part Name                 | Image                                       |
 |-----|---------------------------|---------------------------------------------|
-| 1.  | The Motors from Part 4 x3 | ![Motors](/img/motors.jpg)                   |
-| 2.  | Omni Wheel Set x3         | ![Omni Wheel Set](/img/omniwheel.jpg)        |
+| 1.  | The Motors from Part 4 x3 | ![Motors](/img/motorsfinished.PNG)                   |
+| 2.  | Omni Wheel Set x3         | ![Omni Wheel Set](/img/wheels.jpg)        |
 
 ## Tools needed
 
 | No. | Tool Name                | Image                                       |
 |-----|--------------------------|---------------------------------------------|
-| 1.  | Phillips Head Screwdriver | ![Phillips Head Screwdriver](/img/screwdriver.jpg) |
+| 1.  | Phillips Head Screwdriver | ![Phillips Head Screwdriver](/img/phillips.jpg) |
 | 2.  | Pliers                   | ![Pliers](/img/pliers.jpg)                   |
 
 
-![Motor Materials](/img/omniwheelparts.jpg)
+Find and open an Onewheel set.
 
+![Omni Wheel Set](/img/wheels.jpg)
 
-Open an Onewheel set.
 
 Take a green silicone bead and push two golden on each end
 
@@ -99,6 +99,8 @@ Secure the omniwheel onto the motor by screwing an aluminum standoff onto the mo
 
 You dont have to put the motor on the mainboard yet!
 
+(confusing picture - retake with motor not on robot)
+
 ![soldered motors](/img/steps/omniweelwithoutstandoff.jpg)
 
 ## Repeat!
@@ -107,5 +109,8 @@ The result should look like this.
 repeat 3 times for each other motor
 
 You dont have to put the motor on the mainboard yet!
+
+(confusing picture - retake with motor not on robot)
+
 
 ![soldered motors](/img/steps/omniwheelFinished.jpg)

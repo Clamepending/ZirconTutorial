@@ -38,21 +38,21 @@ cover:
 
 
 
-![Finished Motors](/img/motorwiressoldered.PNG)
+![soldered motors](/img/steps/FinishedLineSensor.jpg)
 
 ## Materials used
 
 | No. | Part Name                             | Image                                                     |
 |-----|---------------------------------------|-----------------------------------------------------------|
 | 1.  | M3 Metal Female-Female Standoffs x12  | ![M3 Metal Female-Female Standoffs](/img/standoffs.jpg)     |
-| 2.  | M3 Bolts x24                          | ![M3 Bolts](/img/m3bolts.jpg)                              |
-| 3.  | Line Sensor x3                        | ![Line Sensor](/img/linesensor.jpg)                         |
+| 2.  | M3 Bolts x24                          | ![M3 Bolts](/img/screws.jpg)                              |
+| 3.  | Line Sensor x3                        | ![Line Sensor](/img/line.jpg)                         |
 
 ## Tools needed
 
 | No. | Tool Name                        | Image                                                   |
 |-----|----------------------------------|---------------------------------------------------------|
-| 1.  | Screwdriver                      | ![Screwdriver](/img/screwdriver.jpg)                     |
+| 1.  | Phillips Head Screwdriver               | ![Screwdriver](/img/phillips.jpg)                     |
 
 ![Motor Materials](/img/linesensorparts.jpg)
 
@@ -61,19 +61,15 @@ The line sensor board has 4 holes, of which 1 is placed closer to the edge. Ther
 
 Use 4 bolts and 4 standoffs to sandwich the line sensor. The bolts should be screwed in from the side with electrical components (side DOES matter)
 
-## Prepare line sensor
-
-We will repeat the next steps 3 times for each motor. For this step, be sure not to overtighten the bolts and dig into the PCB. Tighten them comfortably but not too much. Get 4 m3 bolts (the larger ones) and m3 nuts. Secure the motor onto the Zircon board with the 4 bolts through the holes in the black casing.
-
-![inserting pin](/img/steps/linesensorsingle.jpg)
+![sandwiched line](/img/steps/linesensorsingle.jpg)
 
 ## Secure line sensor
 
 Attach the sensor to the Zircon board with 4 more bolts. The standoffs should be straight. If not, please make sure you put the line sensor in the correct orientation and facing down.
 
-Repeat 2 more times.
-
 ![soldered motors](/img/steps/MountedLinesensor.jpg)
+
+Repeat 2 more times.
 
 The result should look like this
 

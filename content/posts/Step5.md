@@ -44,23 +44,23 @@ cover:
 
 | No. | Part Name                | Image                                       |
 |-----|--------------------------|---------------------------------------------|
-| 1.  | 15:1 Gear Motor Set x3   | ![15:1 Gear Motor Set](/img/gearmotor.jpg)   |
-| 2.  | Wire x6                  | ![Wire](/img/wire.jpg)                       |
+| 1.  | 15:1 Gear Motor Set x3   | ![15:1 Gear Motor Set](/img/motor.jpg)   |
+| 2.  | Wire x6                  | ![Wire](/img/wires.jpg)                       |
 
 ## Tools needed
 
 | No. | Tool Name               | Image                                       |
 |-----|--------------------------|---------------------------------------------|
-| 1.  | Solder                   | ![Solder](/img/solder.jpg)                   |
+| 1.  | Solder                   | ![Solder](/img/iron.jpg)                   |
 | 2.  | Soldering Iron           | ![Soldering Iron](/img/solderingiron.jpg)    |
-| 3.  | Phillips Head Screwdriver | ![Phillips Head Screwdriver](/img/screwdriver.jpg) |
+| 3.  | Phillips Head Screwdriver | ![Phillips Head Screwdriver](/img/phillips.jpg) |
 | 4.  | Pliers                   | ![Pliers](/img/pliers.jpg)                   |
 
 
-![Motor Materials](/img/motorparts.jpg)
-
-
 First, open the gear motor set.
+
+![15:1 Gear Motor Set](/img/motor.jpg)
+
 
 Put the two black motor casing parts around the motor until it is snug. You may have to rotate the motor around so that the rectangular indent lines up with the black casing.
 
@@ -71,9 +71,11 @@ Use a screwdriver to secure the casing to the motor with two screws
 
 ## Shaft pin
 
-Be especially careful with this step Use pliers to put the metal pin into the hole in the shaft of the motor.
+Be especially careful with this step. Use pliers to put the metal pin into the hole in the shaft of the motor.
 
-![inserting pin](/img/steps/insertingpin.jpg)
+(supercut video)
+
+![inserting pin](/img/pin.png)
 
 This step requires some force, but make sure not to bend or break the pin. The shaft should look like this:
 
@@ -82,6 +84,8 @@ This step requires some force, but make sure not to bend or break the pin. The s
 ## Soldering motor wires
 
 Solder a wire to each of the motor tabs. Make sure to not be too slow at soldering and melt the plastic of the motor.
+
+(supercut video)
 
 Repeat for the other 2 motors.
 

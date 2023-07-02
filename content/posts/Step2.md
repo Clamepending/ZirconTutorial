@@ -68,7 +68,7 @@ Find the male T-Connector.
 
 ![male T connector](/img/tconnector.jpg)
 
-Now we need to connect the two. To do that we will use soldering.
+Now we need to connect the female T-Connector and battery case. To do that we will use soldering.
 
 
 ## What is Soldering?

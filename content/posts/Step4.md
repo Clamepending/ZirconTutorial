@@ -55,48 +55,54 @@ cover:
 |-----|--------------------------|-------------------------------------|
 | 1.  | SOLDERING IRON     | ![female T connector](/img/iron.jpg)  |
 | 2.  | SOLDER             | ![battery case](/img/solder.jpg) |
-| 3.  | WIRE CUTTERS             | ![wire cutters](/img/solder.jpg) |
+| 3.  | WIRE CUTTERS             | ![wire cutters](/img/cutter.jpg) |
 
 
 ## Switch
 
 Put the switch in the 3 holes. The direction does not matter. Solder all three holes and cut the excess length of pin with a wire cutter
 
+(video supercut 20 sec)
+
 ![switch placement](/img/steps/switchplacement.jpg)
 
-## How to cut header pins
 
-Cutting female header pins is slightly different to cutting male ones. You will need to sacrifice 1 pin for each cut.
-
-To cut female header pins, place a wire cutter exactly in the middle of the pin and cut. This will destroy the pin the wire cutter cut, but will result in no harm to the pins on either side.
-
-{{< youtube id="WAvgahqRGlQ" >}}
 
 ## female header pins
 
-Please cut the following length female header pins:
+Get the two female header pins
 
-1. 24 pin long female header pin x2
-2. 3 pin long female header pin x1
-3. 1 pin long female header pin x1
+![switch placement](/img/femaleHeaders.jpg)
 
+and solder them as shown.
 
-![female hader pin placement](/img/steps/revisedmainboardpins.png)
+(picture)
 
-Place the 24 pin, 3 pin, and 1 pin long header pins in their respective holes (direction does not matter) and solder them.
+(video supercut)
+
 
 ![after soldering](/img/steps/headerpinssoldered.PNG)
 
+Get the 4 pin JST port.
+
+![JST port](/img/4pins.jpg)
+
 Solder the 4 pin JST port into place. The direction DOES matter so make sure it is exactly like the image.
 
-![Parts List](/img/steps/JSTDirection.PNG)
+![JST finished](/img/steps/JSTDirection.PNG)
+
+Get the 8 Infrared sensors.
+
+![ball sensors](/img/ballsensors.jpg)
+
 
 Insert the Infrared (ball) sensors in the 8 slots equally spaced around the perimeter of the main board and solder them. It helps to bend the pins after inserting, then solder, then clip the extra length of the pins
+
+(super cut video of ball sneor soldering)
 
 ![ball sensors](/img/steps/ballsensors.jpg)
 
 
 The result should look like this:
-
 
 ![Parts List](/img/steps/MainBoardComplete.jpg)
