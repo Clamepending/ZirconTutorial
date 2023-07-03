@@ -45,9 +45,8 @@ cover:
 |-----|-------------------------|--------------------------------------------|
 | 1.  | Zircon PCB x1           | ![Zircon PCB](/img/mainboard.jpg)           |
 | 2.  | Female Header Pins x2   | ![Female Header Pins](/img/femaleHeaders.jpg)  |
-| 3.  | Switch x1               | ![Switch](/img/switch.jpg)                  |
-| 4.  | 4 Pin JST Port x1       | ![4 Pin JST Port](/img/4pins.jpg)         |
-| 5.  | Ball Sensors x8         | ![Ball Sensors](/img/ballsensors.jpg)       |
+| 3.  | 4 Pin JST Port x1       | ![4 Pin JST Port](/img/4pins.jpg)         |
+| 4.  | Ball Sensors x8         | ![Ball Sensors](/img/ballsensors.jpg)       |
 
 ## Tools needed
 
@@ -58,13 +57,6 @@ cover:
 | 3.  | WIRE CUTTERS             | ![wire cutters](/img/cutter.jpg) |
 
 
-## Switch
-
-Put the switch in the 3 holes. The direction does not matter. Solder all three holes and cut the excess length of pin with a wire cutter
-
-(video supercut 20 sec)
-
-![switch placement](/img/steps/switchplacement.jpg)
 
 
 

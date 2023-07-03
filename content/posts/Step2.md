@@ -42,8 +42,8 @@ cover:
 
 | No. | Part Name                  | Image                                |
 |-----|--------------------------|-------------------------------------|
-| 1.  | FEMALE T CONNECTOR X1    | ![female T connector](/img/tconnectorfemale.jpg)  |
-| 2.  | AA BATTERY HOLDERX1      | ![battery case](/img/batterycase.jpg) |
+| 1.  | MALE T CONNECTOR X1    | ![male T connector](/img/tconnector.jpg)  |
+| 2.  | Zircon PCB x1           | ![Zircon PCB](/img/mainboard.jpg)           |
 
 
 ## Tools needed
@@ -53,23 +53,7 @@ cover:
 | 1.  | SOLDERING IRON     | ![female T connector](/img/iron.jpg)  |
 | 2.  | SOLDER             | ![battery case](/img/solder.jpg) |
 
-
-## Lets make the battery!
-
-First find the battery case:
-
-![battery case](/img/batterycase.jpg)
-
-Find the female T-Connector. 
-
-![female T connector](/img/tconnectorfemale.jpg)
-
-Find the male T-Connector. 
-
-![male T connector](/img/tconnector.jpg)
-
-Now we need to connect the female T-Connector and battery case. To do that we will use soldering.
-
+We need to put the battery port onto the robot. To do that, we will use soldering.
 
 ## What is Soldering?
 
@@ -80,30 +64,25 @@ Soldering is used to make an electrical connection between two parts. It involve
 If you want extra practice before getting started on the kit, you can use something like https://www.sparkfun.com/products/14635.
 
 
-## Soldering practice
 
-Plug your connectors together as follows:
+## Battery port
+
+We will now install the battery port on the robot.
+
+Find the red male T-connector
 
 (image)
 
-Hold your battery case and connector in place with tape as follows (you can hold the parts with your hand but someparts will get very hot so be careful!).
+Put it in the slot on the Zircon PCB (main board). Make sure your board is right side up as in the picture.
 
-Make sure you are soldering the female connector!
+(image before)
 
+(image after)
 
-(picture of case and connector in place with tape)
-
-VIDEO:
-Then plug in your iron to heat it. After 2 minutes it should be hot, test by melting solder.
-
-place soldering iron on part to heat the connector for 1 second.
-
-Then touch solder to the pad.
-
-If you mess up or take longer than 10 seconds, let the parts cool for 20 seconds before trying again
+Turn the board over and solder the connector to the board.
 
 (video)
 
-(picture)
+Afterwards your board should look like this.
 
-(picture after)
+(image)

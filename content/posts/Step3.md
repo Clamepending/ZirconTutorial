@@ -36,15 +36,13 @@ cover:
 #     appendFilePath: true # to append file path to Edit link
 ---
 
-
+We will now put on the on/off switch.
 
 ## Materials used
-
-| No. | Part Name                  | Image                                |
-|-----|--------------------------|-------------------------------------|
-| 1.  | MALE T CONNECTOR X1    | ![male T connector](/img/tconnector.jpg)  |
-| 2.  | Zircon PCB x1           | ![Zircon PCB](/img/mainboard.jpg)           |
-
+| No. | Part Name               | Image                                      |
+|-----|-------------------------|--------------------------------------------|
+| 1.  | Zircon PCB x1           | ![Zircon PCB](/img/mainboard.jpg)           |
+| 3.  | Switch x1               | ![Switch](/img/switch.jpg)                  |
 
 ## Tools needed
 
@@ -52,26 +50,17 @@ cover:
 |-----|--------------------------|-------------------------------------|
 | 1.  | SOLDERING IRON     | ![female T connector](/img/iron.jpg)  |
 | 2.  | SOLDER             | ![battery case](/img/solder.jpg) |
+| 3.  | WIRE CUTTERS             | ![wire cutters](/img/cutter.jpg) |
 
 
-## Battery port
+## Switch
 
-We will now install the battery port on the robot.
+Put the switch in the 3 holes. The direction does not matter. Solder all three holes and cut the excess length of pin with a wire cutter
 
-Find the red male T-connector
+(video supercut 20 sec)
 
-(image)
+![switch placement](/img/steps/switchplacement.jpg)
 
-Put it in the slot on the Zircon PCB (main board). Make sure your board is right side up as in the picture.
 
-(image before)
 
-(image after)
 
-Turn the board over and solder the connector to the board.
-
-(video)
-
-Afterwards your board should look like this.
-
-(image)

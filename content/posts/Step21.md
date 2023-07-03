@@ -1,7 +1,7 @@
 ---
-title: "STEP 11"
+title: "STEP 21"
 date: 2020-09-15T11:30:03+00:00
-weight: 11
+weight: 21
 # aliases: ["/first"]
 tags: ["software"]
 author: "Mark Ogata"
@@ -11,7 +11,7 @@ TocOpen: false
 draft: false
 hidemeta: false
 comments: false
-description: "Move a motor"
+description: "Advanced Soccer Robotics"
 canonicalURL: "https://canonical.url/to/page"
 disableHLJS: true # to disable highlightjs
 disableShare: true
@@ -36,36 +36,32 @@ cover:
 #     appendFilePath: true # to append file path to Edit link
 ---
 
-Lets move a motor!
+Take a look at some world cup matches:
+
+{{< youtube id="" >}}
+
+{{< youtube id="" >}}
+
+{{< youtube id="" >}}
+
+What strategies are teams using? 
+
+How would you use their strategy on your robot?
+
+How can you improve your robot (Hardware and software)?
+
+Your next challenge is to compete in RoboCup Junior! (You will need a teammate)
+
+Register for [RoboCupJunior USA here.](http://www.robocupjunior.us/)
+
+If you are not in the US, google search RoboCupJunior followed by your country.
 
 
-{{< youtube id="cWxSHGtisMc" >}}
-
-```C++
-#include <Arduino.h>
-#include <zirconLib.h>
 
 
-void setup(void)
-{
-
-  InitializeZircon();
-
-}
 
 
-void loop(void)
-{
-    motor1(100, 0);
-}
-```
 
-## IF YOUR CODE DOES NOT WORK
-
-- seeing if ; is at the end of every command like above
-- seeing if the spacing is exactly as above (no space between motor1 and (100, 0) )
-- look at the previous video to see if your platformio.ini file is set up correctly (we added lib_deps)
-- feel free to ask if you are stuck in [our discord server!](https://discord.gg/TEpPBN6myj)
 
 
 
