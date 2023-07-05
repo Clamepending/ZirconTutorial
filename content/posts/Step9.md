@@ -71,11 +71,11 @@ Double check if the teensy is put in the right way.
 
 Get your battery case.
 
-![soldered motors](/img/emptyBatterycase.jpg)
+![battery case](/img/emptyBatterycase.jpg)
 
 Insert the AA batteries into the battery holder. 
 
-(image of loaded battery case)
+![battery case](/img/batterycas_filled.jpg)
 
 ## Magic smoke
 
