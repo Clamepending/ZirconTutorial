@@ -52,6 +52,14 @@ Now we will make the robot always try to face a single direction using the compa
 
 {{< youtube id="wgeVtOuVwHY" >}}
 
+The compass sensor always set North as 0, but we don't always want to be scoring towards North. 
+
+To be able to set a desired scoring direction, we need to modify our program to change the desired socring direction when we press a button.
+
+
+{{< youtube id="fkgyy-sEoaQ" >}}
+
+
 
 
 
