@@ -47,7 +47,7 @@ cover:
 | 1.  | Zircon x1                 | ![Zircon](/img/mainPhoto.jpg)                   |
 | 2.  | Teensy x1     | ![Teensy](/img/teensy.jpg)                   |
 | 3.  | Battery from Part 1 x1    | ![Battery](/img/battery.jpg)                 |
-| 4.  | AA Battery x4 (not included) | ![AA Battery](/img/aabattery.jpg)           |
+| 4.  | AA Battery x4 (not included) | ![AA Battery](/img/AA.jpg)           |
 | 5.  | Compass x1                | ![Compass](/img/compass.jpg)                 |
 
 
