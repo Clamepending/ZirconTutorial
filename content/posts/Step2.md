@@ -50,7 +50,7 @@ cover:
 
 | No. | Part Name                  | Image                                |
 |-----|--------------------------|-------------------------------------|
-| 1.  | SOLDERING IRON     | ![female T connector](/img/iron.jpg)  |
+| 1.  | SOLDERING IRON     | ![iron](/img/iron.jpg)  |
 | 2.  | SOLDER             | ![battery case](/img/solder.jpg) |
 
 We need to put the battery port onto the robot. To do that, we will use soldering.
@@ -71,13 +71,13 @@ We will now install the battery port on the robot.
 
 Find the red male T-connector
 
-(image)
+![male T connector](/img/tconnector.jpg)
 
 Put it in the slot on the Zircon PCB (main board). Make sure your board is right side up as in the picture.
 
-(image before)
+![top picture](/img/mainboard_before_T.jpg)
 
-(image after)
+![top picture](/img/mainboard_before_T_back.jpg)
 
 Turn the board over and solder the connector to the board.
 
