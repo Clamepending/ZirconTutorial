@@ -36,21 +36,35 @@ cover:
 #     appendFilePath: true # to append file path to Edit link
 ---
 
-Take a look at some world cup matches:
+Take a look at some robots:
 
-{{< youtube id="" >}}
+{{< youtube id="3Gupdy-QfdE&t=3s" >}}
 
-{{< youtube id="" >}}
+{{< youtube id="Wn_nImoX7QE" >}}
 
-{{< youtube id="" >}}
+These are open league:
+
+{{< youtube id="Cvr9OlNaKdM" >}}
+
+{{< youtube id="q0AYYp_xNLg&t=27s" >}}
 
 What strategies are teams using? 
 
-How would you use their strategy on your robot?
+There are more leagues in the college level:
+
+{{< youtube id="sZI2DS-OK4s?t=139" >}}
+
+{{< youtube id="_Y5_iGxWFrQ" >}}
+
+Could you use their strategy on your robot?
+
+What are the shortcomings of other robots?
 
 How can you improve your robot (Hardware and software)?
 
 Your next challenge is to compete in RoboCup Junior! (You will need a teammate)
+
+Don't be intimidated by the videos. Everyone starts out as a beginner, and RoboCup welcomes beginners!
 
 Register for [RoboCupJunior USA here.](http://www.robocupjunior.us/)
 
