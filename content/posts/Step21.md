@@ -38,7 +38,7 @@ cover:
 
 Take a look at some robots:
 
-{{< youtube id="3Gupdy-QfdE&t=3s" >}}
+{{< youtube id="3Gupdy-QfdE&t" >}}
 
 {{< youtube id="Wn_nImoX7QE" >}}
 
@@ -46,13 +46,13 @@ These are open league:
 
 {{< youtube id="Cvr9OlNaKdM" >}}
 
-{{< youtube id="q0AYYp_xNLg&t=27s" >}}
+{{< youtube id="q0AYYp_xNLg&t" >}}
 
 What strategies are teams using? 
 
 There are more leagues in the college level:
 
-{{< youtube id="sZI2DS-OK4s?t=139" >}}
+{{< youtube id="sZI2DS-OK4s?" >}}
 
 {{< youtube id="_Y5_iGxWFrQ" >}}
 
