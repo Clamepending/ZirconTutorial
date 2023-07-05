@@ -68,7 +68,7 @@ Don't be intimidated by the videos. Everyone starts out as a beginner, and RoboC
 
 Register for [RoboCupJunior USA here.](http://www.robocupjunior.us/)
 
-If you are not in the US, google search RoboCupJunior followed by your country.
+If you are not in the US, google search RoboCupJunior followed by your country. If you can't find a place to register for your country, let us know in [our discord](https://discord.gg/TEpPBN6myj) and we can help you.
 
 
 
