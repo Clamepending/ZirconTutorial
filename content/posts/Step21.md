@@ -38,7 +38,7 @@ cover:
 
 Take a look at some robots:
 
-{{< youtube id="Id6Uz_VjpLk&list=PLetuJZKXfM0KkvWZmPiT-BcT8aFns--l3" >}}
+{{< youtube id="Id6Uz_VjpLk" >}}
 
 {{< youtube id="Wn_nImoX7QE" >}}
 
