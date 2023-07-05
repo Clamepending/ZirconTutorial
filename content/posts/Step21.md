@@ -38,7 +38,7 @@ cover:
 
 Take a look at some robots:
 
-{{< youtube id="3Gupdy-QfdE&t" >}}
+{{< youtube id="3Gupdy-QfdE" >}}
 
 {{< youtube id="Wn_nImoX7QE" >}}
 
@@ -46,7 +46,7 @@ These are open league:
 
 {{< youtube id="Cvr9OlNaKdM" >}}
 
-{{< youtube id="q0AYYp_xNLg&t" >}}
+{{< youtube id="q0AYYp_xNLg" >}}
 
 What strategies are teams using? 
 
