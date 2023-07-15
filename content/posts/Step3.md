@@ -57,9 +57,8 @@ We will now put on the on/off switch.
 
 Put the switch in the 3 holes. The direction does not matter. Solder all three holes and cut the excess length of pin with a wire cutter
 
-(video supercut 20 sec)
 
-![switch placement](/img/steps/switchplacement.jpg)
+![switch placement](/img/switchplacement.jpg)
 
 
 

@@ -52,7 +52,7 @@ cover:
 | No. | Tool Name               | Image                                       |
 |-----|--------------------------|---------------------------------------------|
 | 1.  | Solder                   | ![Solder](/img/iron.jpg)                   |
-| 2.  | Soldering Iron           | ![Soldering Iron](/img/solderingiron.jpg)    |
+| 2.  | Soldering Iron           | ![Soldering Iron](/img/iron.jpg)    |
 | 3.  | Phillips Head Screwdriver | ![Phillips Head Screwdriver](/img/phillips.jpg) |
 | 4.  | Pliers                   | ![Pliers](/img/pliers.jpg)                   |
 
@@ -73,7 +73,7 @@ Use a screwdriver to secure the casing to the motor with two screws
 
 Be especially careful with this step. Use pliers to put the metal pin into the hole in the shaft of the motor.
 
-(supercut video)
+<!-- (supercut video) -->
 
 ![inserting pin](/img/pin.png)
 
@@ -85,7 +85,7 @@ This step requires some force, but make sure not to bend or break the pin. The s
 
 Solder a wire to each of the motor tabs. Make sure to not be too slow at soldering and melt the plastic of the motor.
 
-(supercut video)
+<!-- (supercut video) -->
 
 Repeat for the other 2 motors.
 

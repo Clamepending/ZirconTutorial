@@ -81,8 +81,6 @@ Put it in the slot on the Zircon PCB (main board). Make sure your board is right
 
 Turn the board over and solder the connector to the board.
 
-(video)
-
 Afterwards your board should look like this.
 
-(image)
+![top picture](/img/mainboard_before_T.jpg)

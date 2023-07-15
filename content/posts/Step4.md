@@ -38,12 +38,12 @@ cover:
 
 
 
-![Finished Teensy](/img/steps/MainBoardComplete.jpg)
+<!-- ![Finished Teensy](/img/steps/MainBoardComplete.jpg) -->
 
 ## Materials used
 | No. | Part Name               | Image                                      |
 |-----|-------------------------|--------------------------------------------|
-| 1.  | Zircon PCB x1           | ![Zircon PCB](/img/mainboard.jpg)           |
+| 1.  | Zircon PCB x1           | ![Zircon PCB](/img/step4Start.jpg)           |
 | 2.  | Female Header Pins x2   | ![Female Header Pins](/img/femaleHeaders.jpg)  |
 | 3.  | 4 Pin JST Port x1       | ![4 Pin JST Port](/img/4pins.jpg)         |
 | 4.  | Ball Sensors x8         | ![Ball Sensors](/img/ballsensors.jpg)       |
@@ -68,12 +68,9 @@ Get the two female header pins
 
 and solder them as shown.
 
-(picture)
+![header placement](/img/femaleHeadersInstalled.jpg)
 
-(video supercut)
-
-
-![after soldering](/img/steps/headerpinssoldered.PNG)
+## 4 pin JST port
 
 Get the 4 pin JST port.
 
@@ -81,7 +78,7 @@ Get the 4 pin JST port.
 
 Solder the 4 pin JST port into place. The direction DOES matter so make sure it is exactly like the image.
 
-![JST finished](/img/steps/JSTDirection.PNG)
+![JST finished](/img/JSTDirection.jpg)
 
 Get the 8 Infrared sensors.
 
@@ -92,9 +89,9 @@ Insert the Infrared (ball) sensors in the 8 slots equally spaced around the peri
 
 (super cut video of ball sneor soldering)
 
-![ball sensors](/img/steps/ballsensors.jpg)
+![ball sensors](/img/ballsensorsinring.jpg)
 
 
 The result should look like this:
 
-![Parts List](/img/steps/MainBoardComplete.jpg)
+<!-- ![Parts List](/img/steps/MainBoardComplete.jpg) -->
