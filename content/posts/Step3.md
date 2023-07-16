@@ -41,7 +41,7 @@ We will now put on the on/off switch.
 ## Materials used
 | No. | Part Name               | Image                                      |
 |-----|-------------------------|--------------------------------------------|
-| 1.  | Zircon PCB x1           | ![Zircon PCB](/img/mainboard.jpg)           |
+| 1.  | Zircon PCB x1           | ![Zircon PCB](/img/mainboard_before_T.jpg)           |
 | 3.  | Switch x1               | ![Switch](/img/switch.jpg)                  |
 
 ## Tools needed

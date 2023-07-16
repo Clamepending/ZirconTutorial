@@ -57,17 +57,18 @@ We need to put the battery port onto the robot. To do that, we will use solderin
 
 ## What is Soldering?
 
-(video of what soldering is and how to solder https://www.youtube.com/watch?v=AqvHogekDI4&t=120s)
-
 Soldering is used to make an electrical connection between two parts. It involves melting the solder with the soldering iron and touching the molten solder onto where the connection is needed.
 
-If you want extra practice before getting started on the kit, you can use something like https://www.sparkfun.com/products/14635.
+{{< youtube id="https://youtu.be/CmpNzR6XfYk" >}}
 
+If you want extra practice before getting started on the kit, you can use something like https://www.sparkfun.com/products/14635.
 
 
 ## Battery port
 
 We will now install the battery port on the robot.
+
+{{< youtube id="https://youtu.be/L-i48hbp36o" >}}
 
 Find the red male T-connector
 
@@ -80,6 +81,8 @@ Put it in the slot on the Zircon PCB (main board). Make sure your board is right
 ![top picture](/img/mainboard_before_T_back.jpg)
 
 Turn the board over and solder the connector to the board.
+
+![bottom picture](/img/tconnectorsoldered.jpg)
 
 Afterwards your board should look like this.
 
