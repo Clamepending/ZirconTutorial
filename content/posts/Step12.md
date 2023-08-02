@@ -40,7 +40,7 @@ Lets go forward!
 
 Make sure to put a roll of tape under the Zircon so the wheels are floating (we dont want the robot to run off the table when a motor moves)
 
-{{< youtube id="1Vjz8MSdefE" >}}
+{{< youtube id="1Vjz8MSdefE?rel=0" >}}
 
 
 Make sure you replicate what we did in the video! (Going forward)

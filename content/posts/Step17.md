@@ -38,7 +38,7 @@ cover:
 
 We will now make the robot go forward when the ball is in front of it!
 
-{{< youtube id="vOuMdZxA5Jw" >}}
+{{< youtube id="vOuMdZxA5Jw?rel=0" >}}
 
 
 

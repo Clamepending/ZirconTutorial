@@ -66,7 +66,7 @@ Put the two black motor casing parts around the motor until it is snug. You may 
 
 Use a screwdriver to secure the casing to the motor with two screws
 
-{{< youtube id="aWCvLJ_i3TA" >}}
+{{< youtube id="aWCvLJ_i3TA?rel=0" >}}
 
 
 ## Shaft pin

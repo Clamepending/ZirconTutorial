@@ -38,23 +38,23 @@ cover:
 
 Take a look at some robots:
 
-{{< youtube id="Id6Uz_VjpLk" >}}
+{{< youtube id="Id6Uz_VjpLk?rel=0" >}}
 
-{{< youtube id="Wn_nImoX7QE" >}}
+{{< youtube id="Wn_nImoX7QE?rel=0" >}}
 
 These are open league:
 
-{{< youtube id="Cvr9OlNaKdM" >}}
+{{< youtube id="Cvr9OlNaKdM?rel=0" >}}
 
-{{< youtube id="q0AYYp_xNLg" >}}
+{{< youtube id="q0AYYp_xNLg?rel=0" >}}
 
 What strategies are teams using? 
 
 There are more leagues in the college level:
 
-{{< youtube id="sZI2DS-OK4s?" >}}
+{{< youtube id="sZI2DS-OK4s?rel=0" >}}
 
-{{< youtube id="_Y5_iGxWFrQ" >}}
+{{< youtube id="_Y5_iGxWFrQ?rel=0" >}}
 
 Could you use their strategy on your robot?
 

@@ -68,7 +68,7 @@ and solder them as shown.
 
 ![header placement](/img/femaleHeadersInstalled.jpg)
 
-{{< youtube id="https://youtu.be/o-MVYhZNtZY" >}}
+{{< youtube id="https://youtu.be/o-MVYhZNtZY?rel=0" >}}
 
 
 ## 4 pin JST port

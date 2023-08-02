@@ -38,7 +38,7 @@ cover:
 
 We will now combine everything we learned to make a basic soccer robot!
 
-{{< youtube id="" >}}
+{{< youtube id="?rel=0" >}}
 
 
 

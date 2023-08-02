@@ -38,7 +38,7 @@ cover:
 
 Lets make a line detector robot!
 
-{{< youtube id="MRVUxzB9apk" >}}
+{{< youtube id="MRVUxzB9apk?rel=0" >}}
 
 
 

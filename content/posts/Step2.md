@@ -68,7 +68,7 @@ If you want extra practice before getting started on the kit, you can use someth
 
 We will now install the battery port on the robot.
 
-{{< youtube id="https://youtu.be/L-i48hbp36o" >}}
+{{< youtube id="https://youtu.be/L-i48hbp36o?rel=0" >}}
 
 Find the red male T-connector
 

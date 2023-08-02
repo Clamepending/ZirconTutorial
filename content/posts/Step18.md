@@ -40,7 +40,7 @@ We will now make the robot find the ball and touch it.
 
 To test this you will need an Infrared Ball.
 
-{{< youtube id="oUFHaiWmgmE" >}}
+{{< youtube id="oUFHaiWmgmE?rel=0" >}}
 
 
 

@@ -56,7 +56,7 @@ Watch the video to get started on the first step: downloading a code editor.
 
 ## VS Code and platformio
 
-{{< youtube id="xylDcAshLSQ" >}}
+{{< youtube id="xylDcAshLSQ?rel=0" >}}
 
 [Download VS Code](https://code.visualstudio.com/download)
 

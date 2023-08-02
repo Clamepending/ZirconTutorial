@@ -40,24 +40,24 @@ We will now use the compass sensor so we can score in the right goal!
 
 First, watch the video to install the sensor on the robot.
 
-{{< youtube id="nBTJl8NxmD0" >}}
+{{< youtube id="nBTJl8NxmD0?rel=0" >}}
 
 Next, watch the video to learn about the calibration step that is needed when you plug in the compass sensor.
 
 You will learn that the calibration step always runs when the robot first turns on. After the calibration is done, your main program will execute.
 
-{{< youtube id="yEa_q0muTuk" >}}
+{{< youtube id="yEa_q0muTuk?rel=0" >}}
 
 Now we will make the robot always try to face a single direction using the compass sensor!
 
-{{< youtube id="wgeVtOuVwHY" >}}
+{{< youtube id="wgeVtOuVwHY?rel=0" >}}
 
 The compass sensor always set North as 0, but we don't always want to be scoring towards North. 
 
 To be able to set a desired scoring direction, we need to modify our program to change the desired socring direction when we press a button.
 
 
-{{< youtube id="fkgyy-sEoaQ" >}}
+{{< youtube id="fkgyy-sEoaQ?rel=0" >}}
 
 
 

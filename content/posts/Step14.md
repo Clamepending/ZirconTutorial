@@ -42,12 +42,12 @@ To do that we need to read the sensor, and then print it to the computer.
 
 In the first video we will learn how to print things to the computer.
 
-{{< youtube id="La3AE8Unwd8" >}}
+{{< youtube id="La3AE8Unwd8?rel=0" >}}
 
 
 Now we read line sensor values from the Zircon and print it to the computer.
 
-{{< youtube id="gSW4hw-sVJA" >}}
+{{< youtube id="gSW4hw-sVJA?rel=0" >}}
 
 
 
