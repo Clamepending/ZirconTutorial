@@ -80,6 +80,10 @@ tocopen = false
   name = "instagram"
   url = "https://www.instagram.com/robomovusa/"
 
+  [[params.socialIcons]]
+  name = "discord"
+  url = "https://discord.gg/2PtEjRPX"
+
 [params.analytics.google]
 SiteVerificationTag = "XYZabc"
 
