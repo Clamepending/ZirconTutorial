@@ -6,7 +6,7 @@
         "content" .Plain 
         "permalink" .Permalink 
         "summary" .Summary 
-        "image" .image
+        "image" .Params.image
     ) -}}
     {{- end }}
 {{- end -}}
