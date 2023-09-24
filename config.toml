@@ -65,7 +65,7 @@ tocopen = false
     url = "posts"
 
     [[params.profileMode.buttons]]
-    name = "Tags"/img/mainboard.jpg
+    name = "Tags"
     url = "tags"
 
   [params.homeInfoParams]
