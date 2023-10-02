@@ -97,7 +97,7 @@ void loop(void)
 platform = teensy
 board = teensy41
 framework = arduino
-lib_deps = clamepending/ZirconLib@^1.0.17
+lib_deps = clamepending/ZirconLib@^1.0.33
 
 
 ```
