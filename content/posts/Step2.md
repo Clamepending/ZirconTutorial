@@ -59,7 +59,7 @@ We need to put the battery port onto the robot. To do that, we will use solderin
 
 Soldering is used to make an electrical connection between two parts. It involves melting the solder with the soldering iron and touching the molten solder onto where the connection is needed.
 
-{{< youtube id="https://youtu.be/CmpNzR6XfYk" >}}
+{{< youtube id="https://youtu.be/CmpNzR6XfYk">}}
 
 If you want extra practice before getting started on the kit, you can use something like https://www.sparkfun.com/products/14635.
 
@@ -68,7 +68,7 @@ If you want extra practice before getting started on the kit, you can use someth
 
 We will now install the battery port on the robot.
 
-{{< youtube id="https://youtu.be/L-i48hbp36o?rel=0" >}}
+{{< youtube id="https://youtu.be/L-i48hbp36o">}}
 
 Find the red male T-connector
 
