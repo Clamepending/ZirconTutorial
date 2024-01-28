@@ -68,7 +68,7 @@ and solder them as shown.
 
 ![header placement](/img/femaleHeadersInstalled.jpg)
 
-{{< youtube id="https://youtu.be/o-MVYhZNtZY?rel=0" >}}
+{{< youtube id="o-MVYhZNtZY >}}
 
 
 ## 4 pin JST port
@@ -79,7 +79,7 @@ Get the 4 pin JST port.
 
 Solder the 4 pin JST port into place. The direction DOES matter so make sure it is exactly like the image.
 
-{{< youtube id="https://youtu.be/qbaliLCnCK8" >}}
+{{< youtube id="qbaliLCnCK8" >}}
 
 ![JST finished](/img/JSTDirection.jpg)
 
@@ -90,7 +90,7 @@ Get the 8 Infrared sensors.
 
 Insert the Infrared (ball) sensors in the 8 slots equally spaced around the perimeter of the main board and solder them. It helps to bend the pins after inserting, then solder, then clip the extra length of the pins
 
-{{< youtube id="https://youtu.be/vnsHy8MWWLg" >}}
+{{< youtube id="vnsHy8MWWLg" >}}
 
 ![ball sensors](/img/ballsensorsinring.jpg)
 

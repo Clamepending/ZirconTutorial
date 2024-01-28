@@ -39,7 +39,7 @@ cover:
 Lets move a motor!
 
 
-{{< youtube id="cWxSHGtisMc?rel=0" >}}
+{{< youtube id="cWxSHGtisMc" >}}
 
 ```C++
 #include <Arduino.h>

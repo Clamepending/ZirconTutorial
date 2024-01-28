@@ -38,7 +38,7 @@ cover:
 
 We will now use the white line sensors to go forward until we see a white line.
 
-{{< youtube id="em977XPnUE4?rel=0" >}}
+{{< youtube id="em977XPnUE4" >}}
 
 
 

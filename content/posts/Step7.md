@@ -87,7 +87,7 @@ Repeat these steps for the other 2 motors.
 
 (reshoot video with new version because pinout is different)
 
-{{< youtube id="RKKadLGrtvk?rel=0" >}}
+{{< youtube id="RKKadLGrtvk" >}}
 
 The result should look like this
 

@@ -40,7 +40,7 @@ Lets go forward for 1 second every second.
 
 Make sure to put a roll of tape under the Zircon so the wheels are floating (we dont want the robot to run off the table when a motor moves)
 
-{{< youtube id="YX3BUDtq8SE?rel=0" >}}
+{{< youtube id="YX3BUDtq8SE" >}}
 
 Make sure you replicate what we did in the video!
 
