@@ -48,7 +48,7 @@
                     } else {
                         // Display the response
                         response.forEach(item => {
-                            chatMessages.innerHTML += `<p>Bot: ${item.sequence}</p>`;
+                            chatMessages.innerHTML += `<p>Bot: ${item.generated_text}</p>`; // Update to display generated_text
                         });
                     }
                 })
