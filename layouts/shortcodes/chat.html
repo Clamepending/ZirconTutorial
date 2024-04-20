@@ -39,7 +39,7 @@
             chatMessages.innerHTML += `<p>User: ${userInput}</p>`;
 
             // Make a query to the Hugging Face API
-            query({"inputs": "context: You are Zircon Bot. You should be happy to help and answer clearly with detailed steps like talking to a 4th grader. Question: " + userInput  + " Answer: "})
+            query({"inputs": "context: You are Zircon Bot. You should be happy to help with answering questions about programming the Zircon soccer robot kit, and debugging C++. Answer clearly with detailed steps like talking to a 4th grader. Question: " + userInput  + " Answer: "})
                 .then(response => {
                     // Handle the API response
                     if (response.error) {
