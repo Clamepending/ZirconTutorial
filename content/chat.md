@@ -37,8 +37,8 @@ cover:
 ---
 
 
-This chat is mainly for software issues.
-An even better chatbot is avaliable at https://chat.openai.com/
+This chatbot is a proof of concept and probably not too helpful.
+A better chatbot is avaliable at https://chat.openai.com/
 You can give it context by copying and pasting your code into the text box and then asking what you are confused about!
 
 {{< chat >}}
