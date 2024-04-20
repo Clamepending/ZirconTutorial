@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BERT Model Query</title>
+    <title>Zircon Chat</title>
 </head>
 <body>
     <div id="chat-container">
@@ -32,7 +32,7 @@
         }
 
         function sendMessage() {
-            const userInput = document.getElementById('user-input').value;
+            const userInput = "question: " + document.getElementById('user-input').value + " answer: ";
             const chatMessages = document.getElementById('chat-messages');
 
             // Display user message
@@ -44,11 +44,11 @@
                     // Handle the API response
                     console.log("Response from API:", response); // Debugging statement
                     if (response.error) {
-                        chatMessages.innerHTML += `<p>Bot: Error: ${response.error}</p>`;
+                        chatMessages.innerHTML += `<p>Zircon Bot: Error: ${response.error}</p>`;
                     } else {
                         // Display the response
                         response.forEach(item => {
-                            chatMessages.innerHTML += `<p>Bot: ${item.generated_text}</p>`; // Update to display generated_text
+                            chatMessages.innerHTML += `<p>Zircon Bot: ${item.generated_text}</p>`; // Update to display generated_text
                         });
                     }
                 })
