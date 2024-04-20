@@ -43,7 +43,7 @@ tocopen = false
   favicon = "/img/logo.jpg"
   favicon16x16 = "<link / abs url>"
   favicon32x32 = "<link / abs url>"
-  apple_touch_icon = "<link / abs url>"
+  apple_touch_icon = "/img/logo.jpg"
   safari_pinned_tab = "<link / abs url>"
 
   [params.label]
