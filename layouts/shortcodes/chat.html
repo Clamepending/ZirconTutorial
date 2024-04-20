@@ -25,9 +25,15 @@
                 max_tokens: 150,
             }),
         });
-        
+
+        // Log the response for debugging
+        console.log('Response from OpenAI API:', response);
+
         const responseData = await response.json();
-        
+
+        // Log the responseData for debugging
+        console.log('Response Data:', responseData);
+
         if (responseData.choices && responseData.choices.length > 0) {
             const botResponse = responseData.choices[0].text.trim();
             
@@ -45,6 +51,7 @@
     
     // Clear user input field
     document.getElementById('user-input').value = '';
-    }
+}
+
 
 </script>
