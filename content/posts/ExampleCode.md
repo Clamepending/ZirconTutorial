@@ -36,8 +36,6 @@ cover:
 #     appendFilePath: true # to append file path to Edit link
 ---
 
-{{< chat >}}
-
 Paste these into main.cpp and platformio.ini respectively:
 
 ## main.cpp
