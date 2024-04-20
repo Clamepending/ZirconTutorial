@@ -13,6 +13,8 @@
     </div>
 
     <script>
+        let conversationHistory = [];
+
         async function query(data) {
             const API_TOKEN = "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"; // Replace with your actual API token
             const response = await fetch(
@@ -20,14 +22,14 @@
                 {
                     headers: {
                         "Authorization": `Bearer ${API_TOKEN}`,
-                        "Content-Type": "application/json" // Specify content type
+                        "Content-Type": "application/json"
                     },
                     method: "POST",
                     body: JSON.stringify(data),
                 }
             );
             const result = await response.json();
-            console.log("API Response:", result); // Debugging statement
+            console.log("API Response:", result);
             return result;
         }
 
@@ -38,25 +40,26 @@
             // Display user message
             chatMessages.innerHTML += `<p>User: ${userInput}</p>`;
 
-            // Prepare chat messages in the required format
-            const messages = [
-                {"role": "user", "content": userInput},
-                {"role": "assistant", "content": "context: You are Zircon Bot. You should be happy to help and answer clearly with detailed steps like talking to a 4th grader. Question: " + userInput  + " Answer:"}
-            ];
+            // Prepare chat messages including conversation history
+            const messages = conversationHistory.concat([
+                { "role": "user", "content": userInput }
+            ]);
 
             // Make a query to the Hugging Face API
             query({ "inputs": messages })
                 .then(response => {
                     // Handle the API response
-                    console.log("Response from API:", response); // Debugging statement
+                    console.log("Response from API:", response);
                     if (response.error) {
                         chatMessages.innerHTML += `<p>Zircon Bot: Error: ${response.error}</p>`;
                     } else {
                         // Display the response
                         response.forEach(item => {
-                            chatMessages.innerHTML += `<p>Zircon Bot: ${item.generated_text}</p>`; // Update to display generated_text
+                            chatMessages.innerHTML += `<p>Zircon Bot: ${item.generated_text}</p>`;
                         });
                     }
+                    // Update conversation history
+                    conversationHistory = messages;
                 })
                 .catch(error => {
                     // Handle errors
