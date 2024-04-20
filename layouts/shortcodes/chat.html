@@ -32,14 +32,14 @@
         }
 
         function sendMessage() {
-            const userInput = "question: " + document.getElementById('user-input').value + " answer: ";
+            const userInput = document.getElementById('user-input').value;
             const chatMessages = document.getElementById('chat-messages');
 
             // Display user message
             chatMessages.innerHTML += `<p>User: ${userInput}</p>`;
 
             // Make a query to the Hugging Face API
-            query({ "inputs": userInput })
+            query({ "inputs": "question: " + userInput  + " answer: "})
                 .then(response => {
                     // Handle the API response
                     console.log("Response from API:", response); // Debugging statement
