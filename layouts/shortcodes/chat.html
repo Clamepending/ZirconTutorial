@@ -18,7 +18,7 @@
             const response = await fetch(
                 "https://api-inference.huggingface.co/models/google/gemma-1.1-7b-it",
                 {
-                    headers: { Authorization: `Bearer ${API_TOKEN}` },
+                    headers: { "Authorization": `Bearer ${API_TOKEN}` },
                     method: "POST",
                     body: JSON.stringify(data),
                 }
@@ -35,7 +35,7 @@
             chatMessages.innerHTML += `<p>User: ${userInput}</p>`;
 
             // Make a query to the Hugging Face API
-            query({ inputs: userInput })
+            query({ "inputs": userInput })
                 .then(response => {
                     // Handle the API response
                     if (response.error) {
