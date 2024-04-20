@@ -27,6 +27,7 @@
                 }
             );
             const result = await response.json();
+            console.log("API Response:", result); // Debugging statement
             return result;
         }
 
@@ -41,6 +42,7 @@
             query({ "inputs": userInput })
                 .then(response => {
                     // Handle the API response
+                    console.log("Response from API:", response); // Debugging statement
                     if (response.error) {
                         chatMessages.innerHTML += `<p>Bot: Error: ${response.error}</p>`;
                     } else {
