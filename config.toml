@@ -116,18 +116,12 @@ SiteVerificationTag = "XYZabc"
 identifier = "Example Code"
 name = "Chat with Zircon Helper"
 url = "/chat/"
-weight = 0
+weight = 10
 
 [[menu.main]]
 identifier = "Example Code"
 name = "Example Code"
 url = "/posts/examplecode/"
-weight = 10
-
-[[menu.main]]
-identifier = "tags"
-name = "tags"
-url = "/tags/"
 weight = 20
 
 [[menu.main]]
