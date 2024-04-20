@@ -113,7 +113,7 @@ SiteVerificationTag = "XYZabc"
   keys = [ "title", "permalink", "summary", "content" ]
 
 [[menu.main]]
-identifier = "Example Code"
+identifier = "Chat"
 name = "Chat with Zircon Helper"
 url = "/chat/"
 weight = 10
