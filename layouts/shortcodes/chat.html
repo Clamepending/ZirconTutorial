@@ -6,13 +6,14 @@
 
 <script>
     async function sendMessage() {
-        const userInput = document.getElementById('user-input').value;
-        const chatMessages = document.getElementById('chat-messages');
-        
-        // Display user message
-        chatMessages.innerHTML += `<p>User: ${userInput}</p>`;
-        
-        // Send user message to GPT-3 API and display response
+    const userInput = document.getElementById('user-input').value;
+    const chatMessages = document.getElementById('chat-messages');
+    
+    // Display user message
+    chatMessages.innerHTML += `<p>User: ${userInput}</p>`;
+    
+    // Send user message to GPT-3 API and display response
+    try {
         const response = await fetch('https://api.openai.com/v1/engines/davinci/completions', {
             method: 'POST',
             headers: {
@@ -26,12 +27,24 @@
         });
         
         const responseData = await response.json();
-        const botResponse = responseData.choices[0].text.trim();
         
-        // Display bot response
-        chatMessages.innerHTML += `<p>Bot: ${botResponse}</p>`;
-        
-        // Clear user input field
-        document.getElementById('user-input').value = '';
+        if (responseData.choices && responseData.choices.length > 0) {
+            const botResponse = responseData.choices[0].text.trim();
+            
+            // Display bot response
+            chatMessages.innerHTML += `<p>Bot: ${botResponse}</p>`;
+        } else {
+            // Handle empty or undefined response
+            chatMessages.innerHTML += `<p>Bot: Sorry, I couldn't generate a response.</p>`;
+        }
+    } catch (error) {
+        // Handle fetch error
+        console.error('Error fetching response:', error);
+        chatMessages.innerHTML += `<p>Bot: An error occurred while fetching the response.</p>`;
     }
+    
+    // Clear user input field
+    document.getElementById('user-input').value = '';
+    }
+
 </script>
