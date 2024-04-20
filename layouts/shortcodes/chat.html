@@ -4,39 +4,38 @@
     <button onclick="sendMessage()">Send</button>
 </div>
 
-
 <script>
-    // Define your API key
-    const API_KEY = 'YOUR_API_KEY';
+    function sendMessage() {
+        const userInput = document.getElementById('user-input').value;
+        const chatMessages = document.getElementById('chat-messages');
 
-    // Define your input text
-    const inputText = "Your input text goes here.";
+        // Display user message
+        chatMessages.innerHTML += `<p>User: ${userInput}</p>`;
 
-    // Make a POST request to the Anthropic API
-    fetch('https://api.anthropic.com', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${API_KEY}`
-        },
-        body: JSON.stringify({
-            "inputs": {
-                "text": inputText
+        // Make a POST request to the Hugging Face API
+        fetch('https://api-inference.huggingface.co/models/meta-llama/Meta-Llama-3-70B-Instruct', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer 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'
             },
-            "parameters": {
-                // Add parameters if needed
-            }
+            body: JSON.stringify({
+                "inputs": userInput
+            })
         })
-    })
-    .then(response => response.json())
-    .then(data => {
-        // Handle the API response
-        console.log(data);
-        document.getElementById('result').innerText = JSON.stringify(data, null, 2);
-    })
-    .catch(error => {
-        // Handle errors
-        console.error('Error:', error);
-        document.getElementById('result').innerText = 'An error occurred.';
-    });
+        .then(response => response.json())
+        .then(data => {
+            // Handle the API response
+            const botResponse = data[0].generated_text;
+            chatMessages.innerHTML += `<p>Bot: ${botResponse}</p>`;
+        })
+        .catch(error => {
+            // Handle errors
+            console.error('Error:', error);
+            chatMessages.innerHTML += `<p>Bot: An error occurred while fetching the response.</p>`;
+        });
+
+        // Clear user input field
+        document.getElementById('user-input').value = '';
+    }
 </script>
