@@ -36,6 +36,46 @@ cover:
 #     appendFilePath: true # to append file path to Edit link
 ---
 
+
+
+<div id="chat-container">
+    <div id="chat-messages"></div>
+    <input type="text" id="user-input" placeholder="Type your message...">
+    <button onclick="sendMessage()">Send</button>
+</div>
+
+<script>
+    async function sendMessage() {
+        const userInput = document.getElementById('user-input').value;
+        const chatMessages = document.getElementById('chat-messages');
+        
+        // Display user message
+        chatMessages.innerHTML += `<p>User: ${userInput}</p>`;
+        
+        // Send user message to GPT-3 API and display response
+        const response = await fetch('https://api.openai.com/v1/engines/davinci/completions', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': 'Bearer YOUR_API_KEY_HERE', // Replace with your actual API key
+            },
+            body: JSON.stringify({
+                prompt: userInput,
+                max_tokens: 150,
+            }),
+        });
+        
+        const responseData = await response.json();
+        const botResponse = responseData.choices[0].text.trim();
+        
+        // Display bot response
+        chatMessages.innerHTML += `<p>Bot: ${botResponse}</p>`;
+        
+        // Clear user input field
+        document.getElementById('user-input').value = '';
+    }
+</script>
+
 Paste these into main.cpp and platformio.ini respectively:
 
 ## main.cpp
