@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zircon Chat</title>
+    <style>
+        #user-input {
+            resize: vertical;
+        }
+    </style>
 </head>
 <body>
     <div id="chat-container">
         <div id="chat-messages"></div>
-        <textarea id="user-input" placeholder="Type your message..." rows="4"></textarea>
+        <!-- Change rows attribute to 1 -->
+        <textarea id="user-input" placeholder="Type your message..." rows="1"></textarea>
         <button onclick="sendMessage()">Send</button>
     </div>
 
