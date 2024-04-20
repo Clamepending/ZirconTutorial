@@ -24,59 +24,53 @@
         async function query(data) {
             const API_TOKEN = "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"; // Replace with your actual API token
             const response = await fetch(
-                "https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1",
+                "https://api-inference.huggingface.co/models/mistralai/Mixtral-8x7B-Instruct-v0.1", //google/gemma-1.1-7b-it",
                 {
                     headers: {
                         "Authorization": `Bearer ${API_TOKEN}`,
-                        "Content-Type": "application/json"
+                        "Content-Type": "application/json" // Specify content type
                     },
                     method: "POST",
                     body: JSON.stringify(data),
                 }
             );
             const result = await response.json();
-            console.log("API Response:", result);
+            console.log("API Response:", result); // Debugging statement
             return result;
         }
-
+        // let ChatHistory = "";
         function sendMessage() {
-            const userInput = document.getElementById('user-input').value.trim(); // Trim whitespace
+            const userInput = document.getElementById('user-input').value;
             const chatMessages = document.getElementById('chat-messages');
-
-            if (userInput === '') {
-                return; // Ignore empty messages
-            }
 
             // Display user message
             chatMessages.innerHTML += `<p>User: ${userInput}</p>`;
 
             // Make a query to the Hugging Face API
-            query({
-                "inputs": {
-                    "context": "You are Zircon Bot. You should be happy to help with answering questions about programming the Zircon soccer robot kit, and debugging C++. Answer clearly and concisely with detailed steps like talking to a 4th grader. We are programming an a microcontroller in an arduino environment.",
-                    "user_input": userInput,
-                    "max_length": 300 // Adjust the max_length as needed
-                }
-            }).then(response => {
-                if (response.error) {
-                    chatMessages.innerHTML += `<p>Zircon Bot: Error: ${response.error}</p>`;
-                } else {
-                    // Display the response
-                    response.forEach(item => {
-                        const generatedText = item.generated_text.replace(/context:.*?Answer:|Question:.*?Answer:|Confidence:.*$/gs, '');
-                        chatMessages.innerHTML += `<p>Zircon Bot: ${generatedText.trim()}</p>`;
-                    });
-                }
-            }).catch(error => {
-                console.error('Error:', error);
-                chatMessages.innerHTML += `<p>Bot: An error occurred while fetching the response.</p>`;
-            });
+            query({"inputs": "context: You are Zircon Bot. You should be happy to help with answering questions about programming the Zircon soccer robot kit, and debugging C++. Answer clearly and concisely with detailed steps like talking to a 4th grader. We are programming an a microcontroller in an arduino environment. Question: " + userInput  + " Answer: ", "max_length": 300})
+                .then(response => {
+                    // Handle the API response
+                    if (response.error) {
+                        chatMessages.innerHTML += `<p>Zircon Bot: Error: ${response.error}</p>`;
+                    } else {
+                        // Display the response
+                        response.forEach(item => {
+                            const generatedText = item.generated_text.replace(/context:.*?Answer:|Question:.*?Answer:|Confidence:.*$/gs, '');
+                            chatMessages.innerHTML += `<p>Zircon Bot: ${generatedText.trim()}</p>`; // Update to display generated_text
+                        });
+                        // ChatHistory = ChatHistory + " Question: " + userInput  + " Answer: " + item.generated_text
+                    }
+                })
+                .catch(error => {
+                    // Handle errors
+                    console.error('Error:', error);
+                    chatMessages.innerHTML += `<p>Bot: An error occurred while fetching the response.</p>`;
+                });
 
             // Clear user input field
             document.getElementById('user-input').value = '';
 
-            // Scroll to the bottom of the chat window
-            chatMessages.scrollTop = chatMessages.scrollHeight;
+            
         }
     </script>
 </body>
