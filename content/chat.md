@@ -38,6 +38,7 @@ cover:
 
 
 This chat is mainly for software issues.
-Try copy and pasting your code and asking what you are confused about!
+An even better chatbot is avaliable at https://chat.openai.com/
+You can give it context by copying and pasting your code into the text box and then asking what you are confused about!
 
 {{< chat >}}
