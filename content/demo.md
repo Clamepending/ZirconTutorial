@@ -1,9 +1,9 @@
 ---
-title: "Zircon Chat"
+title: "Demo Program"
 date: 2024-04-15T11:30:03+00:00
-weight: 9999
+weight: null
 # aliases: ["/first"]
-tags: ["Robotics"]
+tags: []
 author: "Mark Ogata"
 # author: ["Me", "You"] # multiple authors
 showToc: true
