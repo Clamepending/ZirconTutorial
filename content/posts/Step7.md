@@ -85,9 +85,7 @@ Accidentally swapping pins from different motors is not fine, so if that happens
 
 Repeat these steps for the other 2 motors.
 
-(reshoot video with new version because pinout is different)
-
-{{< youtube id="RKKadLGrtvk" >}}
+{{< youtube id="THmgUJDb8Mw" >}}
 
 The result should look like this
 

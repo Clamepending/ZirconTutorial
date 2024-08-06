@@ -64,7 +64,7 @@ Take a green silicone bead and push two golden on each end
 
 Repeat for a total of 18 beads.
 
-{{< youtube id="Jbxnd-y4ZgQ" >}}
+{{< youtube id="_WmdpOGMhH8" >}}
 
 
 ## Rings
